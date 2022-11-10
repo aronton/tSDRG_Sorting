@@ -44,61 +44,83 @@ print("final_Seed",final_Seed)
 
 print("\n---------------Direction Path----------------\n")
 
-direc1 = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/'
-print(direc1)
-print("\n")
+# direc1 = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL_Accumulation11/' + jdis +'/' + dim +'/' +'ZL_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+# print(direc1)
+# print("\n")
 
-if(os.path.exists(direc1) == False):
-    os.mkdir(direc1)
-direc2 =  direc1 + 'ZL_Accumulation11/'
-print(direc2)
-print("\n")
+# if(os.path.exists(direc1) == False):
+#     os.mkdir(direc1)
+# direc2 =  direc1 + 'ZL_Accumulation11/'
+# print(direc2)
+# print("\n")
 
-if(os.path.exists(direc2) == False):
-    os.mkdir(direc2)
-direc3 =  direc2 + jdis +'/'
-print(direc3)
-print("\n")
+# if(os.path.exists(direc2) == False):
+#     os.mkdir(direc2)
+# direc3 =  direc2 + jdis +'/'
+# print(direc3)
+# print("\n")
 
-if(os.path.exists(direc3) == False):
-    os.mkdir(direc3)
-direc4 =  direc3 + dim +'/'
-print(direc4)
-print("\n")
+# if(os.path.exists(direc3) == False):
+#     os.mkdir(direc3)
+# direc4 =  direc3 + dim +'/'
+# print(direc4)
+# print("\n")
 
-if(os.path.exists(direc4) == False):
-    os.mkdir(direc4)
+# if(os.path.exists(direc4) == False):
+#     os.mkdir(direc4)
 
-accumulation_path = direc4 +'ZL_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+accumulation_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL_Accumulation11/' + jdis +'/' + dim +'/'
 
-die_seed_path = direc4 +'ZL_Die_Seed_' + jdis + "_" + dim + '_' + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+if(os.path.exists(accumulation_dir_path) == False):
+    os.makedirs(accumulation_dir_path)
 
-direc1_ave = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/'
-print(direc1_ave)
-print("\n")
+accumulation_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL_Accumulation11/' + jdis +'/' + dim +'/' +'ZL_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
-if(os.path.exists(direc1_ave) == False):
-    os.mkdir(direc1_ave)
-direc2_ave =  direc1_ave + 'ZL1/'
-print(direc2_ave)
-print("\n")
 
-if(os.path.exists(direc2_ave) == False):
-    os.mkdir(direc2_ave)
-direc3_ave =  direc2_ave + jdis +'/'
-print(direc3_ave)
-print("\n")
+# accumulation_path = direc4 +'ZL_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
-if(os.path.exists(direc3_ave) == False):
-    os.mkdir(direc3_ave)
-direc4_ave =  direc3_ave + dim +'/'
-print(direc4_ave)
-print("\n")
+# die_seed_path = direc4 +'ZL_Die_Seed_' + jdis + "_" + dim + '_' + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
-if (os.path.exists(direc4_ave) == False):
-    os.mkdir(direc4_ave)
+die_seed_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL_Accumulation11/' + jdis +'/' + dim +'/' 
 
-average_path = direc4_ave + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
+if(os.path.exists(die_seed_dir_path) == False):
+    os.makedirs(die_seed_dir_path)
+
+die_seed_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL_Accumulation11/' + jdis +'/' + dim +'/' +'ZL_Die_Seed_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+
+# direc1_ave = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/'
+# print(direc1_ave)
+# print("\n")
+
+# if(os.path.exists(direc1_ave) == False):
+#     os.mkdir(direc1_ave)
+# direc2_ave =  direc1_ave + 'ZL1/'
+# print(direc2_ave)
+# print("\n")
+
+# if(os.path.exists(direc2_ave) == False):
+#     os.mkdir(direc2_ave)
+# direc3_ave =  direc2_ave + jdis +'/'
+# print(direc3_ave)
+# print("\n")
+
+# if(os.path.exists(direc3_ave) == False):
+#     os.mkdir(direc3_ave)
+# direc4_ave =  direc3_ave + dim +'/'
+# print(direc4_ave)
+# print("\n")
+
+# if (os.path.exists(direc4_ave) == False):
+#     os.mkdir(direc4_ave)
+
+# average_path = direc4_ave + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
+
+average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL1/' + jdis +'/'
+
+if(os.path.exists(average_dir_path) == False):
+    os.makedirs(average_dir_path)
+
+average_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL1/' + jdis +'/' + dim +'/' + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
 
 print("accumulation_path:")
 print(accumulation_path)
@@ -146,7 +168,7 @@ if(initial_Seed != 1):
         print(die_seed_frame)
 
     for seed_num in range(initial_Seed, final_Seed + 1):
-        # print("seed_num:",seed_num)
+
         my_csv = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ BC +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) + '/ZL' + '.csv'
 
         my_file = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ BC +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) 
@@ -171,10 +193,8 @@ else:
     print("die_seed_frame\n")
     print(die_seed_frame)
     
-    # print("die_seed",die_seed)
     
     for seed_num in range(initial_Seed, final_Seed + 1):
-        # print("seed_num:",seed_num)
 
         my_csv = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ BC +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) + '/ZL' + '.csv'
 
@@ -196,8 +216,6 @@ else:
 
 Nsample = len(accumulation_frame.index)
 average = accumulation_frame.mean()["ZL"]
-# averageFrame["Nsample"] = len(outputFrame.index)
-# averageFrame["Nseed"] = final_Seed
 std = accumulation_frame.std()["ZL"]
 error = std/np.sqrt(Nsample)
 averageFrame = averageFrame.append({"ZL":average,"error":error,"Nseed":final_Seed,"Nsample":Nsample}, ignore_index=True)
@@ -215,11 +233,6 @@ print("Nsample",Nsample)
 print("average",average)
 print("std",std)
 print("error",error)
-
-# Nsample = np.size(ValueArray)
-# average = np.average(ValueArray)
-# error = np.std(ValueArray) / np.sqrt(Nsample)    
-# outputFrame.loc[0] = {'ZL':average,'error':error, 'Nseed':final_Seed, 'Nsample':Nsample}
 
 print("accumulation_frame:\n")
 print(accumulation_frame)
@@ -249,62 +262,5 @@ if(die_seed_frame["die_seed_num"].isnull().any() == True):
 else:
     die_seed_frame.to_csv(die_seed_path, index=False)
     print(die_seed_frame)
-# die_seed_frame.to_csv(die_seed_path, index=False)
-
-# die_seed_num
-# print("averageFrame:\n")
-# print(averageFrame)
-# averageFrame.to_csv(averge_path, index=False)
-
-# print("die_seed:\n")
-# die_seed_frame.to_csv(die_seed_path, index=False)
-
-# zlArray[l,j,d] = average
-# zlErrorArray[l,j,d] = error
-# zlSampleArray[l,j,d] = Nsample
-
-# averageFrame.to_csv(averge_path,index=0)
-
-# np.save( "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/zlArray" + str(spin) + ".npy", zlArray)
-# np.save( "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/zlErrorArray" + str(spin) + ".npy", zlErrorArray)
-# np.save( "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/zlSampleArray" + str(spin) + ".npy", zlSampleArray)
-
-# zlArrayFrame = []
-# zlErrorArrayFrame = []
-# zlSampleArrayFrame = []
-
-# for k in range(len(L)):
-#     zlArrayFrame.append( pd.DataFrame( zlArray[k,:,:], columns = Dim, index = Jdis, dtype = int))
-#     # print(L[k])
-#     # print(ZLMetaArrayFrame[k])
-
-# for k in range(len(L)):
-#     zlErrorArrayFrame.append( pd.DataFrame( zlErrorArray[k,:,:], columns = Dim, index = Jdis, dtype = int))
-#     # print(L[k])
-#     # print(SOPMetaArrayFrame[k])
-
-# for k in range(len(L)):
-#     zlSampleArrayFrame.append( pd.DataFrame( zlSampleArray[k,:,:], columns = Dim, index = Jdis, dtype = int))
-#     # print(L[k])
-#     # print(SOPMetaArrayFrame[k])
-
-# zlArrayWriter = pd.ExcelWriter('zlArray' + str(spin) + '.xlsx', engine='xlsxwriter')
-# zlErrorArrayWriter = pd.ExcelWriter('zlErrorArray' + str(spin) + '.xlsx', engine='xlsxwriter')
-# zlSampleArrayWriter = pd.ExcelWriter('zlSampleArray' + str(spin) + '.xlsx', engine='xlsxwriter')
-
-
-# for k in Ls:
-#     zlArrayFrame[k].to_excel(zlArrayWriter, sheet_name = str(k))
-
-# for k in Ls:
-#     zlErrorArrayFrame[k].to_excel(zlErrorArrayWriter, sheet_name = str(k))
-
-# for k in Ls:
-#     zlSampleArrayWriter[k].to_excel(zlSampleArrayWriter, sheet_name = str(k))
-
-
-# zlArrayWriter.save()
-# zlErrorArrayWriter.save()
-# zlSampleArrayWriter.save()
 
 print('all done')
