@@ -385,11 +385,11 @@ then
                                 continue
                             fi
 
-                            cp /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                            cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Spin${Spin}/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 
-                            echo -e "cp /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
+                            echo -e "cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Spin${Spin}/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
 
-                            echo -e "cp /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
+                            echo -e "cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Spin${Spin}/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
 
                             replace1="L""$L""/""$Jdis"'/'"$Dim"'/SOP_spin'"${Spin}"'_L'"$L"'_'"$Jdis"'_'"$Dim"'_seed1='"$s1"'_seed2='"$s2"
 
@@ -578,11 +578,11 @@ then
                                 continue
                             fi
 
-                            cp /home/aronton/tSDRG_project/Sorting_data/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                            cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 
-                            echo -e "/home/aronton/tSDRG_project/Sorting_data/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
+                            echo -e "/home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
 
-                            echo -e "/home/aronton/tSDRG_project/Sorting_data/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
+                            echo -e "/home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
 
                             replace1="L""$L""/""$Jdis"'/'"$Dim"'/ZL_spin'"${Spin}"'_L'"$L"'_'"$Jdis"'_'"$Dim"'_seed1='"$s1"'_seed2='"$s2"
 
@@ -727,8 +727,8 @@ else
                                 mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}"
                             fi
                                 
-                            cp /home/aronton/tSDRG_project/Sorting_data/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-                            cp /home/aronton/tSDRG_project/Sorting_data/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
+                            cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
+                            cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
 
                             #replace = $(("L" + "$L"))
                             #replace1 = $(("L" + "$L"))
