@@ -86,12 +86,12 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
         bulk_dx_accumulate_frame.to_csv(bulk_dx_accumulate_path, index = False)
     
     # bulk corr is defined as (-1)^dx < SS > 
-    if( ( dx % 2 ) != 0 ):
-        # dx odd
-        bulk_mean = -bulk_dx_accumulate_frame["corr"].mean()
-    else:
-        # dx even
-        bulk_mean = bulk_dx_accumulate_frame["corr"].mean()
+    # if( ( dx % 2 ) != 0 ):
+    #     # dx odd
+    #     bulk_mean = -bulk_dx_accumulate_frame["corr"].mean()
+    # else:
+    #     # dx even
+    bulk_mean = (-1)**dx*bulk_dx_accumulate_frame["corr"].mean()
 
     bulk_error = bulk_dx_accumulate_frame["corr"].sem(ddof=1)
     bulk_sample = final_seed - int_seed + 1
