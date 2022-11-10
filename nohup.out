@@ -1,0 +1,176 @@
+orderparameter         ==> ZL
+partition         ==> 1
+Ncore         ==> 1
+Spin         ==> 2
+ProbDis        ==> 10
+bonDim        ==> 40
+L1        ==> 64
+L2        ==> 64
+space_L        ==> 0
+J1        ==> 0.2
+J2        ==> 0.2
+space_J        ==> 0
+D1        ==> 0
+D2        ==> 0
+space_D        ==> 0
+seed1        ==> 1
+seed2        ==> 1000
+Nseed :   ==> 1000
+BC :   ==> PBC
+delta seed :   ==> 10
+partitio=1
+Ncore=1
+Spin=2
+P=
+bonDim=40
+L1=64
+L2=64
+space_L=0
+J1=.20
+J2=.20
+space_J=0
+D1=0
+D2=0
+space_D=0
+seed1=1
+seed2=1000
+Nseed=1000
+BC=PBC
+/home/aronton/tSDRG_project/Sorting_data/Spin2/submit_record/2022_11_10/
+/home/aronton/tSDRG_project/Sorting_data/Spin2/submit_record/2022_11_10/Orderparameter=ZL;P=;B=40;L=64_64(0);J=.20_.20(0);D=0_0(0);seed1=1_seed2=1000;Partition=1;BC=PBC;Number_of_core=1
+ooooooooooL_L=64_oooooooooo
+xxxxxxxxxxxxxxx_Jdis020_xxxxxxxxxxxxxxx
+J:.20
+---------------Dim000---------------
+D:0
+/home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis020/Dim000/L64_P10_m40_1000/ZL.csv
+
+seed= is found
+
+/home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/ZL/Metasub_ZL.sh: line 237: [: -le: unary operator expected
+/home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin2/record/L64/Jdis020/Dim000/ZL_spin2_L64_Jdis020_Dim000_seed1=1_seed2=.sh
+
+Submitted batch job 662336
+sbatch /home/aronton/tSDRG_project/Sorting_data/Spin2/record/L64/Jdis020/Dim000/ZL_spin2_L64_Jdis020_Dim000_seed1=1_seed2=.sh 2 PBC 10 40 64 Jdis020 Dim000 1 
+
+\n\nPartition: 1 Number of core: 1 Spin:2 ;L: 64 ~ 64 ( 0 ) ;J: .20 ~ .20 ( 0 ) ;D: 0 ~ 0 ( 0 ) ,seed1: 1 ,seed2: Orderparameter: ZL;BC=PBC
+
+done.
+Thu Nov 10 17:59:19 CST 2022
+orderparameter         ==> ZL
+partition         ==> 1
+Ncore         ==> 1
+Spin         ==> 2
+ProbDis        ==> 10
+bonDim        ==> 40
+L1        ==> 64
+L2        ==> 64
+space_L        ==> 0
+J1        ==> 0.2
+J2        ==> 0.2
+space_J        ==> 0
+D1        ==> 0
+D2        ==> 0
+space_D        ==> 0
+seed1        ==> 1
+seed2        ==> 1000
+Nseed :   ==> 1000
+BC :   ==> PBC
+delta seed :   ==> 10
+partitio=1
+Ncore=1
+Spin=2
+P=
+bonDim=40
+L1=64
+L2=64
+space_L=0
+J1=.20
+J2=.20
+space_J=0
+D1=0
+D2=0
+space_D=0
+seed1=1
+seed2=1000
+Nseed=1000
+BC=PBC
+/home/aronton/tSDRG_project/Sorting_data/Spin2/submit_record/2022_11_10/
+/home/aronton/tSDRG_project/Sorting_data/Spin2/submit_record/2022_11_10/Orderparameter=ZL;P=;B=40;L=64_64(0);J=.20_.20(0);D=0_0(0);seed1=1_seed2=1000;Partition=1;BC=PBC;Number_of_core=1
+ooooooooooL_L=64_oooooooooo
+xxxxxxxxxxxxxxx_Jdis020_xxxxxxxxxxxxxxx
+J:.20
+---------------Dim000---------------
+D:0
+/home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis020/Dim000/L64_P10_m40_1000/ZL.csv
+
+seed= is found
+
+/home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/ZL/Metasub_ZL.sh: line 237: [: -le: unary operator expected
+./Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin2/record/L64/Jdis020/Dim000/ZL_spin2_L64_Jdis020_Dim000_seed1=1_seed2=.sh
+
+Submitted batch job 662337
+sbatch /home/aronton/tSDRG_project/Sorting_data/Spin2/record/L64/Jdis020/Dim000/ZL_spin2_L64_Jdis020_Dim000_seed1=1_seed2=.sh 2 PBC 10 40 64 Jdis020 Dim000 1 
+
+\n\nPartition: 1 Number of core: 1 Spin:2 ;L: 64 ~ 64 ( 0 ) ;J: .20 ~ .20 ( 0 ) ;D: 0 ~ 0 ( 0 ) ,seed1: 1 ,seed2: Orderparameter: ZL;BC=PBC
+
+done.
+Thu Nov 10 18:06:15 CST 2022
+orderparameter         ==> ZL
+partition         ==> 1
+Ncore         ==> 1
+Spin         ==> 2
+ProbDis        ==> 10
+bonDim        ==> 40
+L1        ==> 64
+L2        ==> 64
+space_L        ==> 0
+J1        ==> 0.2
+J2        ==> 0.2
+space_J        ==> 0
+D1        ==> 0
+D2        ==> 0
+space_D        ==> 0
+seed1        ==> 1
+seed2        ==> 500
+Nseed :   ==> 500
+BC :   ==> PBC
+delta seed :   ==> 10
+partitio=1
+Ncore=1
+Spin=2
+P=
+bonDim=40
+L1=64
+L2=64
+space_L=0
+J1=.20
+J2=.20
+space_J=0
+D1=0
+D2=0
+space_D=0
+seed1=1
+seed2=500
+Nseed=500
+BC=PBC
+/home/aronton/tSDRG_project/Sorting_data/Spin2/submit_record/2022_11_10/
+/home/aronton/tSDRG_project/Sorting_data/Spin2/submit_record/2022_11_10/Orderparameter=ZL;P=;B=40;L=64_64(0);J=.20_.20(0);D=0_0(0);seed1=1_seed2=500;Partition=1;BC=PBC;Number_of_core=1
+ooooooooooL_L=64_oooooooooo
+xxxxxxxxxxxxxxx_Jdis020_xxxxxxxxxxxxxxx
+J:.20
+---------------Dim000---------------
+D:0
+/home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis020/Dim000/L64_P10_m40_500/ZL.csv
+
+seed=500 is found
+
+./Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin2/record/L64/Jdis020/Dim000/ZL_spin2_L64_Jdis020_Dim000_seed1=1_seed2=500.sh
+
+Submitted batch job 662338
+sbatch /home/aronton/tSDRG_project/Sorting_data/Spin2/record/L64/Jdis020/Dim000/ZL_spin2_L64_Jdis020_Dim000_seed1=1_seed2=500.sh 2 PBC 10 40 64 Jdis020 Dim000 1 500
+
+\n\nPartition: 1 Number of core: 1 Spin:2 ;L: 64 ~ 64 ( 0 ) ;J: .20 ~ .20 ( 0 ) ;D: 0 ~ 0 ( 0 ) ,seed1: 1 ,seed2: 500 Orderparameter: ZL;BC=PBC
+
+done.
+Thu Nov 10 18:09:32 CST 2022

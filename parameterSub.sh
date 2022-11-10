@@ -25,4 +25,4 @@ echo "Partition:" ${partition} "Number of core:" ${cpuspertask} "Spin:${Spin}"";
 
 read -p "Continue or not (Y/N): " Continue
 
-nohup sh /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/Metasub_${orderparameter}.sh $orderparameter $partition $Ncore $Spin $P $bonDim $L1 $L2 $space_L $J1 $J2 $space_J $D1 $D2 $space_D $s1 $s2 $Nseed $BC $deltaSeed&
+nohup sh /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/${orderparameter}/Metasub_${orderparameter}.sh $orderparameter $partition $Ncore $Spin $P $bonDim $L1 $L2 $space_L $J1 $J2 $space_J $D1 $D2 $space_D $s1 $s2 $Nseed $BC $deltaSeed&
