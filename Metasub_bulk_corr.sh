@@ -69,11 +69,6 @@ echo -e "Nseed=$Nseed"
 BC=${19}
 echo -e "BC=$BC"
 
-# deltaSeed=${20}
-# echo "Partition:" ${partition} "Number of core:" ${cpuspertask} "Spin:${Spin}"";L:"${L1}"~" ${L2} "(" ${space_L} ")" ";J:" ${J1} "~" ${J2} "(" ${space_J} ")" ";D:" ${D1} "~" ${D2} "(" ${space_D} ")" ",seed1:" ${s1} ",seed2:" ${s2} "Orderparameter:" ${orderparameter}
-
-# read -p "Continue or not (Y/N): " Continue
-
 sorting_Path="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/submit_record/"
 
 now_date="$(date +'%Y_%m_%d')/"
@@ -261,11 +256,11 @@ do
                         #     continue
                         # fi
 
-                        cp /home/aronton/tSDRG_project/Sorting_data/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh
+                        cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh
 
-                        echo -e "cp /home/aronton/tSDRG_project/Sorting_data/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" 
+                        echo -e "cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" 
 
-                        echo -e "cp /home/aronton/tSDRG_project/Sorting_data/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" >> "${file}.txt"
+                        echo -e "cp /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" >> "${file}.txt"
 
                         scriptDirection="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh"
                         
@@ -277,8 +272,6 @@ do
 
                         sed -e "s@fileName@${replace}@" -i ${scriptDirection}
 
-                        # sed -e 's/Spin/Spin'"$Spin"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh
-
                         sed -e 's/scopion/scopion'"${partition}"'/' -i ${scriptDirection}
 
                         sed -e "s@cpus-per-task@cpus-per-task=${Ncore}@" -i ${scriptDirection}
@@ -288,162 +281,9 @@ do
                         echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2}\n" 
 
                         echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2}\n" >> "${file}.txt"
-                        # done
                 done
         done
 done
-# else 
-#     for (( l=0; l<=${t0}; l=l+1 ))
-#     do
-#             L=$(echo "scale=3; ${L1}+${l}*${space_L}" | bc)
-
-#             if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" ]; then
-#                 # 目錄 /path/to/dir 存在
-#                 echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}_ok" >> ${file}".txt"
-#                 # echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" >> abc.txt
-#             else
-#                 # 目錄 /path/to/dir 不存在
-#                 echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" >> ${file}".txt"
-#                 mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}"
-#             fi
-
-#             if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}" ]; then
-#                 # 目錄 /path/to/dir 存在
-#                 echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}\n_ok" >> ${file}".txt"
-#             else
-#                 # 目錄 /path/to/dir 不存在
-#                 echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}" >> ${file}".txt"
-#                 mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}"
-#             fi
-
-#             for (( j=0; j<=${t1}; j=j+1 ))
-#             do
-#                     J=$(echo "scale=3; ${J1}+${j}*${space_J}" | bc)
-#                     J_100=$(echo "scale=0; 100*(${J1}+${j}*${space_J})/1" | bc)
-
-#                     if [ $J_100 -lt 10 ]
-#                     then
-#                         Jdis="Jdis00"$J_100
-#                     elif [ $J_100 -ge 10 ] && [ $J_100 -lt 100 ]
-#                     then
-#                         Jdis="Jdis0"$J_100
-#                     else
-#                         Jdis="Jdis"$J_100
-#                     fi
-
-#                     echo "xxxxxxxxxxxxxxx_${Jdis}_xxxxxxxxxxxxxxx"
-#                     echo -e "\n\nxxxxxxxxxxxxxxx_${Jdis}_xxxxxxxxxxxxxxx\n\n" >> "${file}.txt"
-
-#                     echo "J:"$J
-#                     echo -e "J:${J}\n" >> "${file}.txt"
-
-#                     if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}" ]; then
-#                         # 目錄 /path/to/dir 存在
-#                         echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}_ok" >> "${file}.txt"
-#                     else
-#                         # 目錄 /path/to/dir 不存在
-#                         echo- e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}" >> "${file}.txt"
-#                         mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}"
-#                     fi
-
-#                     if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}" ]; then
-#                         # 目錄 /path/to/dir 存在
-#                         echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}_ok" >> "${file}.txt"
-#                     else
-#                         # 目錄 /path/to/dir 不存在
-#                         echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}" >> "${file}.txt"
-#                         mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}"
-#                     fi
-
-#                     for (( d=0; d<=${t2}; d=d+1 ))
-#                     do
-#                             D=$(echo "scale=0; 100*(${D1}+${d}*${space_D})/1" | bc)
-#                             echo "D:"$D
-
-#                             if [ $D -lt 10 ]
-#                             then
-#                                 Dim="Dim00"$D
-#                             elif [ $D -ge 10 ] && [ $D -lt 100 ]
-#                             then
-#                                 Dim="Dim0"$D
-#                             else
-#                                 Dim="Dim"$D
-#                             fi
-
-#                             for (( k=${Nseed}; k>=0; k=k-1000))
-#                             do
-#                                     seed=$k
-                                    
-#                                     path="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${P}_m${bonDim}_${k}/ZL.csv"
-
-#                                     echo "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${P}_m${bonDim}_${k}/ZL.csv"
-
-#                                     echo -e "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${P}_m${bonDim}_${k}/ZL.csv" >> "${file}.txt"
-
-#                                     if [ -f "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${P}_m${bonDim}_${k}/ZL.csv" ] ; then
-#                                         s2=$k
-#                                         echo "ok:${seed}"
-#                                         echo -e "ok:${seed}" >> "${file}"".txt"
-#                                         break
-#                                     fi
-#                             done
-
-#                             if [ $seed -eq 0 ] ; then
-#                                 echo "No:${seed}"
-#                                 echo -e "No:${seed}" >> "${file}.txt"
-#                                 continue
-#                             fi
-
-#                             if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}" ]; then
-#                                 # 目錄 /path/to/dir 存在
-#                                 echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}_ok" >> ${file}".txt"
-#                             else
-#                                 # 目錄 /path/to/dir 不存在
-#                                 echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}" >> ${file}".txt"
-#                                 mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}"
-#                             fi
-                            
-#                             if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}" ]; then
-#                                 # 目錄 /path/to/dir 存在
-#                                 echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}_ok" >> ${file}".txt"
-#                             else
-#                                 # 目錄 /path/to/dir 不存在
-#                                 echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}" >> ${file}".txt"
-#                                 mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}"
-#                             fi
-                                
-#                             cp /home/aronton/tSDRG_project/Sorting_data/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-#                             cp /home/aronton/tSDRG_project/Sorting_data/Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-
-#                             #replace = $(("L" + "$L"))
-#                             #replace1 = $(("L" + "$L"))
-#                             replace="L""$L""/J""$J"'/D'"$D"'/ZL_spin'"${Spin}"'_L:'"$L"'_J:'"$J"'_D:'"$D"'_seed1='"$s1"'_seed2='"$s2"
-#                             replace1="L""$L""/J""$J"'/D'"$D"'/SOP_spin'"${Spin}"'_L:'"$L"'_J:'"$J"'_D:'"$D"'_seed1='"$s1"'_seed2='"$s2"
-
-#                             sed -e "s@fileName@$replace@" -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-
-#                             sed -e "s@fileName@$replace1@" -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-
-
-#                             # sed -e 's/fileName/ZL_spin1_L:'"$L"'_J:'"$J"'_D:'"$D"'_seed1='"$s1"'_seed2='"$s2"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin1/record/L${L}/J${J}/D${D}/ZL_spin1_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-#                             # sed -e 's/fileName/SOP_spin1_L:'"$L"'_J:'"$J"'_D:'"$D"'_seed1='"$s1"'_seed2='"$s2"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin1/record/L${L}/J${J}/D${D}/SOP_spin1_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-                            
-#                             sed -e 's/scopion/scopion'"$partition"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-#                             sed -e 's/scopion/scopion'"$partition"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-                            
-#                             sed -e 's/cpus-per-task/cpus-per-task='"$Ncore"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh
-#                             sed -e 's/cpus-per-task/cpus-per-task='"$Ncore"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh 
-                            
-#                             sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/ZL_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh ${L} ${L} 0 ${J} ${J} 0 ${D} ${D} 0 ${s1} ${s2} ${Nseed} ${Spin}
-#                             sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/J${J}/D${D}/SOP_spin${Spin}_L=${L}_J=${J}_D=${D}_seed1=${s1}_seed2=${s2}.sh ${L} ${L} 0 ${J} ${J} 0 ${D} ${D} 0 ${s1} ${s2} ${Nseed} ${Spin}
-
-#                     done
-#             done
-#     done
-# fi
-# else
-#     sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/Metasub.sh
-# fi
 
 echo "\n\n Orderparameter:${orderparameter};Partition: ${partition} ;Number of core: ${Ncore} ;Spin:${Spin} ;L: ${L1} ~ ${L2} ( ${space_L} );J: ${J1} ~ ${J2} ( ${space_J} ) ;D: ${D1} ~ ${D2} ( ${space_D} ) ,seed1: ${s1} ,seed2: ${s2} ;BC=$BC"
 
