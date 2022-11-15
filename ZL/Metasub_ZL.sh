@@ -117,23 +117,23 @@ do
         echo -e "ooooooooooL_L=${L}_oooooooooo"
         echo -e "\n\noooooooooo_L=${L}_oooooooooo\n\n" >> "${file}.txt"
 
-        if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" ]; then
-            # 目錄 /path/to/dir 存在
-            echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}_ok" >> "${file}.txt"
-        else
-            # 目錄 /path/to/dir 不存在
-            echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" >> "${file}.txt"
-            mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}"
-        fi
+        # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" ]; then
+        #     # 目錄 /path/to/dir 存在
+        #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}_ok" >> "${file}.txt"
+        # else
+        #     # 目錄 /path/to/dir 不存在
+        #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}" >> "${file}.txt"
+        #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}"
+        # fi
 
-        if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}" ]; then
-            # 目錄 /path/to/dir 存在
-            echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}_ok" >> "${file}.txt"
-        else
-            # 目錄 /path/to/dir 不存在
-            echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}" >> "${file}.txt"
-            mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}"
-        fi
+        # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}" ]; then
+        #     # 目錄 /path/to/dir 存在
+        #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}_ok" >> "${file}.txt"
+        # else
+        #     # 目錄 /path/to/dir 不存在
+        #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}" >> "${file}.txt"
+        #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}"
+        # fi
 
         for (( j=0; j<=${t1}; j=j+1 ))
         do
@@ -156,23 +156,23 @@ do
                 echo "J:"$J
                 echo -e "J:${J}\n" >> "${file}.txt"
 
-                if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}" ]; then
-                    # 目錄 /path/to/dir 存在
-                    echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}_ok" >> "${file}.txt"
-                else
-                    # 目錄 /path/to/dir 不存在
-                    echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}" >> "${file}.txt"
-                    mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}"
-                fi
+                # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}" ]; then
+                #     # 目錄 /path/to/dir 存在
+                #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}_ok" >> "${file}.txt"
+                # else
+                #     # 目錄 /path/to/dir 不存在
+                #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}" >> "${file}.txt"
+                #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}"
+                # fi
 
-                if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}" ]; then
-                    # 目錄 /path/to/dir 存在
-                    echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}_ok" >> "${file}.txt"
-                else
-                    # 目錄 /path/to/dir 不存在
-                    echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}" >> "${file}.txt"
-                    mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}"
-                fi
+                # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}" ]; then
+                #     # 目錄 /path/to/dir 存在
+                #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}_ok" >> "${file}.txt"
+                # else
+                #     # 目錄 /path/to/dir 不存在
+                #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}" >> "${file}.txt"
+                #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}"
+                # fi
 
                 for (( d=0; d<=${t2}; d=d+1 ))
                 do
@@ -194,8 +194,8 @@ do
                             echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}_ok" >> "${file}.txt"
                         else
                             # 目錄 /path/to/dir 不存在
-                            echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}" >> "${file}.txt"
-                            mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}"
+                            echo -e "mkdir -p /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}" >> "${file}.txt"
+                            mkdir -p "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/L${L}/${Jdis}/${Dim}"
                         fi
                         
                         if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}" ]; then
@@ -203,8 +203,8 @@ do
                             echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}_ok" >> "${file}.txt"
                         else
                             # 目錄 /path/to/dir 不存在
-                            echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}" >> "${file}.txt"
-                            mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}"
+                            echo -e "mkdir -p /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}" >> "${file}.txt"
+                            mkdir -p "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/L${L}/${Jdis}/${Dim}"
                         fi
 
                         echo -e "---------------${Dim}---------------" 
