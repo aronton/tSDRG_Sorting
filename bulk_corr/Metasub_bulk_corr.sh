@@ -69,27 +69,8 @@ echo -e "Nseed=$Nseed"
 BC=${19}
 echo -e "BC=$BC"
 
-sorting_Path="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/submit_record/"
-
-now_date="$(date +'%Y_%m_%d')/"
-# now="${date}"
-
-if [ -d "${sorting_Path}""${now_date}" ]; then
-    # 目錄 /path/to/dir 存在
-    echo -e "${sorting_Path}""${now_date}"
-else
-    # 目錄 /path/to/dir 不存在
-    echo -e "mkdir""${sorting_Path}""${now_date}"
-    mkdir "${sorting_Path}""${now_date}"
-fi
-
-file="${sorting_Path}${now_date}Orderparameter=${orderparameter};P=${P};B=${bonDim};L=${L1}_${L2}(${space_L});J=${J1}_${J2}(${space_J});D=${D1}_${D2}(${space_D});seed1=${seed1}_seed2=${seed2};Partition=${partition};BC=${BC};Number_of_core=${Ncore}"
-
-echo -e "${file}"
-
-date >> "${file}.txt"
-
-echo -e "Partition:${partition};Number of core:${Ncore};Spin:${Spin};L:${L1}~${L2}(${space_L});J:${J1}~${J2}(${space_J});D:${D1}~${D2}(${space_D}),seed1:${seed1},seed2:${seed2};Orderparameter:${orderparameter};BC=${BC}" >> "${file}.txt"
+deltaSeed=${20}
+echo -e "deltaSeed=$deltaSeed"
 
 sorting_Path="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/submit_record/"
 
@@ -97,12 +78,12 @@ now_date="$(date +'%Y_%m_%d')/"
 # now="${date}"
 
 if [ -d "${sorting_Path}""${now_date}" ]; then
-    # submit目錄存在
+    # submit_record 目錄存在
     echo -e "${sorting_Path}""${now_date}"
 else
-    # submit目錄不存在
-    echo -e "mkdir""${sorting_Path}""${now_date}"
-    mkdir "${sorting_Path}""${now_date}"
+    # submit_record 目錄不存在
+    echo -e "mkdir""-p""${sorting_Path}""${now_date}"
+    mkdir -p "${sorting_Path}""${now_date}"
 fi
 
 file="${sorting_Path}${now_date}Orderparameter=${orderparameter};P=${P};B=${bonDim};L=${L1}_${L2}(${space_L});J=${J1}_${J2}(${space_J});D=${D1}_${D2}(${space_D});seed1=${seed1}_seed2=${seed2};Partition=${partition};BC=${BC};Number_of_core=${Ncore}"
@@ -140,28 +121,6 @@ do
         echo -e "ooooooooooL_L=${L}_oooooooooo"
         echo -e "\n\noooooooooo_L=${L}_oooooooooo\n\n" >> "${file}.txt"
 
-        # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}" ]; then
-        #     # 記錄檔目錄存在
-        #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}_ok"
-        #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}_ok" >> "${file}.txt"
-        # else
-        #     # 記錄檔目錄不存在
-        #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}"
-        #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}" >> "${file}.txt"
-        #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}"
-        # fi
-
-        # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}" ]; then
-        #     # 腳本目錄存在
-        #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}_ok"
-        #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}_ok" >> "${file}.txt"
-        # else
-        #     # 腳本目錄不存在
-        #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}"
-        #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}" >> "${file}.txt"
-        #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}"
-        # fi
-
         for (( j=0; j<=${t1}; j=j+1 ))
         do
                 J=$(echo "scale=3; ${J1}+${j}*${space_J}" | bc)
@@ -183,28 +142,6 @@ do
                 echo "J:"$J
                 echo -e "J:${J}\n" >> "${file}.txt"
 
-                # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}" ]; then
-                #     # 記錄檔目錄存在
-                #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}_ok"
-                #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}_ok" >> "${file}.txt"
-                # else
-                #     # 記錄檔目錄不存在
-                #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}"
-                #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}" >> "${file}.txt"
-                #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}"
-                # fi
-
-                # if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}" ]; then
-                #     # 腳本目錄存在
-                #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}_ok"
-                #     echo -e "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}_ok" >> "${file}.txt"
-                # else
-                #     # 腳本目錄不存在
-                #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}"
-                #     echo -e "mkdir /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}" >> "${file}.txt"
-                #     mkdir "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}"
-                # fi
-
                 for (( d=0; d<=${t2}; d=d+1 ))
                 do
                         D=$(echo "scale=3; ${D1}+${d}*${space_D}" | bc)
@@ -219,6 +156,48 @@ do
                         else
                             Dim="Dim"$D_100
                         fi
+
+                        echo -e "---------------${Dim}---------------" 
+                        echo -e "\n\n---------------${Dim}---------------\n\n" >> "${file}.txt"
+
+                        echo -e "D:"$D
+                        echo -e "D:${D}\n" >> "${file}.txt"
+
+                        seed_found_or_Not="No"
+
+                        # check Source csv file
+                        for (( k=${seed2}; k>=0; k=k-${deltaSeed} ))
+                        do
+                                # Source csv path
+                                fileDirection="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/L${L}_P${ProbDis}_m${bonDim}_${k}_corr1.csv"
+
+                                seed_found=$k
+                                
+                                # Source csv path
+                                # path="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/ZL.csv"
+
+                                echo -e "${fileDirection}\n"
+
+                                echo -e "${fileDirection}\n" >> "${file}.txt"
+
+                                if [ -f "${fileDirection}" ] ; then
+                                    s2=$seed_found
+                                    echo -e "seed=${seed_found} is found\n"
+                                    echo -e "seed=${seed_found} is found\n" >> "${file}"".txt"
+                                    seed_found_or_Not="Yes"
+                                    break
+                                fi
+                        done
+
+                        # if $seed is less than 0, no such data and we jump out and continue to next loop
+                        if [ $seed_found_or_Not == "No" ] ; then
+                            echo -e "No such data, seed_found ${seed_found} at J=${Jdis}, D=${Dim}\n"
+                            echo -e "No such data, seed_found ${seed_found} at J=${Jdis}, D=${Dim}\n" >> "${file}.txt"
+                            continue
+                        fi
+
+                        echo -e "${fileDirection}"
+
 
                         if [ -d "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}" ]; then
                             # 記錄檔目錄存在
@@ -242,15 +221,8 @@ do
                             mkdir -p "/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}/${Dim}"
                         fi
 
-                        echo -e "---------------${Dim}---------------" 
-                        echo -e "\n\n---------------${Dim}---------------\n\n" >> "${file}.txt"
 
-                        echo -e "D:"$D
-                        echo -e "D:${D}\n" >> "${file}.txt"
-
-                        fileDirection="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${seed}/L${L}_P${ProbDis}_m${bonDim}_${seed}corr1.csv"
-
-                        echo -e "${fileDirection}"
+                        # fileDirection="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${seed}/L${L}_P${ProbDis}_m${bonDim}_${seed}corr1.csv"
 
                         # if ! [ -f ${fileDirection} ]; then
                         #     continue
