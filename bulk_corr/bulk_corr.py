@@ -91,6 +91,8 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
     #     bulk_mean = -bulk_dx_accumulate_frame["corr"].mean()
     # else:
     #     # dx even
+    
+    # bulk corr is defined as (-1)^dx < SS > 
     bulk_mean = (-1)**dx*bulk_dx_accumulate_frame["corr"].mean()
 
     bulk_error = bulk_dx_accumulate_frame["corr"].sem(ddof=1)
