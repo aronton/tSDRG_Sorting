@@ -213,15 +213,15 @@ do
                         fi
 
 
-                        delta_s=$((${s2}-${s1})) 
-                        echo -e $delta_s
-                        if [ $delta_s -eq 1 ] ; then
-                            echo -e "s1 = s2, No New data\n"
-                            echo -e "s1 = $((${s1} - 1)), s2 = ${s2}\n"
-                            echo -e "s1 = s2, No New data\n" >> "${file}.txt"
-                            echo -e "s1 = ${s1}, s2 = ${s2}\n" >> "${file}.txt"
-                            continue
-                        fi
+                        # delta_s=$((${s2}-${s1})) 
+                        # echo -e $delta_s
+                        # if [ $delta_s -eq 1 ] ; then
+                        #     echo -e "s1 = s2, No New data\n"
+                        #     echo -e "s1 = $((${s1} - 1)), s2 = ${s2}\n"
+                        #     echo -e "s1 = s2, No New data\n" >> "${file}.txt"
+                        #     echo -e "s1 = ${s1}, s2 = ${s2}\n" >> "${file}.txt"
+                        #     continue
+                        # fi
 
 
                         cp ./Osub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/SOP_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
