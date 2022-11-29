@@ -20,6 +20,6 @@ echo "final_Seed        ==> ${9}"
 
 
 date
-    python ./ZL_average_grasp.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9} 
+    python ./ZL/ZL_average_grasp.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9} 
 echo -e "\ndone.\n\n"
 date

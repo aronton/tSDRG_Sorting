@@ -164,141 +164,77 @@ do
                         echo -e "D:${D}\n" >> "${file}.txt"
 
                         # echo -e "${fileDirection}"
-                        
-                        recordDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}"
+                        if [ "${orderparameter}" == "bulk_corr" ]; then
+                            dataDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/metadata/${orderparameter}/${Jdis}/${Dim}/L${L}"
+                        fi
 
-                        slurmDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}/${Dim}"
+                        if [ "${orderparameter}" == "ZL" ]; then
+                            dataDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/metadata/${orderparameter}1/${Jdis}/${Dim}"
+                        fi
 
-                        if [ -d "${recordDir}" ]; then
+                        if [ "${orderparameter}" == "SOP" ]; then
+                            dataDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/metadata/${orderparameter}/${Jdis}/${Dim}/L${L}"
+                        fi
+
+                        # slurmDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}/${Dim}"
+
+                        if [ -d "${dataDir}" ]; then
 
                             # 腳本目錄存在
-                            echo -e "${recordDir} exist"
-                            echo -e "${recordDir} exist" >> "${file}.txt"
+                            echo -e "${dataDir} exist"
+                            echo -e "${dataDir} exist" >> "${file}.txt"
 
-                            if [ "$(ls -A ${recordDir})" ]; then
-                                echo "${recordDir} is not Empty, do not rm"
-                                echo "${recordDir} is not Empty, do not rm" >> "${file}.txt"
+                            if [ "$(ls -A ${dataDir})" ]; then
+                                echo "${dataDir} is not Empty, do not rm"
+                                echo "${dataDir} is not Empty, do not rm" >> "${file}.txt"
                             else
-                                echo "rm -rf ${recordDir}"
-                                echo "${recordDir} is Empty, rm" >> "${file}.txt"
-                                rm -rf ${recordDir}
+                                echo "rm -rf ${dataDir}"
+                                echo "${dataDir} is Empty, rm" >> "${file}.txt"
+                                rm -rf ${dataDir}
                             fi
                         else
                             # 腳本目錄不存在
-                            echo -e "${recordDir} not exist"
-                            echo -e "${recordDir} not exist" >> "${file}.txt"
+                            echo -e "${dataDir} not exist"
+                            echo -e "${dataDir} not exist" >> "${file}.txt"
                         fi
-
-                        if [ -d "${slurmDir}" ]; then
-
-                            # 腳本目錄存在
-                            echo -e "${slurmDir} exist"
-                            echo -e "${slurmDir} exist" >> "${file}.txt"
-
-                            if [ "$(ls -A ${slurmDir})" ]; then
-                                echo "${slurmDir} is not Empty, do not rm"
-                                echo "${slurmDir} is not Empty, do not rm" >> "${file}.txt"
-                            else
-                                echo "rm -rf ${slurmDir}"
-                                echo "${slurmDir} is Empty, rm" >> "${file}.txt"
-                                rm -rf ${slurmDir}                                
-                            fi
-                        else
-                            # 腳本目錄不存在
-                            echo -e "${slurmDir} not exist"
-                            echo -e "${slurmDir} not exist" >> "${file}.txt"
-                        fi
-
                 done
 
-                recordDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}"
+                if [ "${orderparameter}" == "bulk_corr" ]; then
+                    dataDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/metadata/${orderparameter}/${Jdis}/${Dim}/L${L}"
+                fi
 
-                slurmDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}"
+                if [ "${orderparameter}" == "ZL" ]; then
+                    dataDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/metadata/${orderparameter}1/${Jdis}"
+                fi
 
-                if [ -d "${recordDir}" ]; then
+                if [ "${orderparameter}" == "SOP" ]; then
+                    dataDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/metadata/${orderparameter}/${Jdis}/${Dim}/L${L}"
+                fi
+
+                # slurmDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}/${Jdis}/${Dim}"
+
+                if [ -d "${dataDir}" ]; then
 
                     # 腳本目錄存在
-                    echo -e "${recordDir} exist"
-                    echo -e "${recordDir} exist" >> "${file}.txt"
+                    echo -e "${dataDir} exist"
+                    echo -e "${dataDir} exist" >> "${file}.txt"
 
-                    if [ "$(ls -A ${recordDir})" ]; then
-                        echo "${recordDir} is not Empty, do not rm"
-                        echo "${recordDir} is not Empty, do not rm" >> "${file}.txt"
+                    if [ "$(ls -A ${dataDir})" ]; then
+                        echo "${dataDir} is not Empty, do not rm"
+                        echo "${dataDir} is not Empty, do not rm" >> "${file}.txt"
                     else
-                        echo "rm -rf ${recordDir}"
-                        echo "${recordDir} is Empty, rm" >> "${file}.txt"
-                        rm -rf ${recordDir}
+                        echo "rm -rf ${dataDir}"
+                        echo "${dataDir} is Empty, rm" >> "${file}.txt"
+                        rm -rf ${dataDir}
                     fi
                 else
                     # 腳本目錄不存在
-                    echo -e "${recordDir} not exist"
-                    echo -e "${recordDir} not exist" >> "${file}.txt"
+                    echo -e "${dataDir} not exist"
+                    echo -e "${dataDir} not exist" >> "${file}.txt"
                 fi
 
-                if [ -d "${slurmDir}" ]; then
-
-                    # 腳本目錄存在
-                    echo -e "${slurmDir} exist"
-                    echo -e "${slurmDir} exist" >> "${file}.txt"
-
-                    if [ "$(ls -A ${slurmDir})" ]; then
-                        echo "${slurmDir} is not Empty, do not rm"
-                        echo "${slurmDir} is not Empty, do not rm" >> "${file}.txt"
-                    else
-                        echo "rm -rf ${slurmDir}"
-                        echo "${slurmDir} is Empty, rm" >> "${file}.txt"
-                        rm -rf ${slurmDir}                                
-                    fi
-                else
-                    # 腳本目錄不存在
-                    echo -e "${slurmDir} not exist"
-                    echo -e "${slurmDir} not exist" >> "${file}.txt"
-                fi
         done
-
-        recordDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}"
-
-        slurmDir="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/slurm/${orderparameter}/L${L}"
-
-        if [ -d "${recordDir}" ]; then
-
-            # 腳本目錄存在
-            echo -e "${recordDir} exist"
-            echo -e "${recordDir} exist" >> "${file}.txt"
-
-            if [ "$(ls -A ${recordDir})" ]; then
-                echo "${recordDir} is not Empty, do not rm"
-                echo "${recordDir} is not Empty, do not rm" >> "${file}.txt"
-            else
-                echo "rm -rf ${recordDir}"
-                echo "${recordDir} is Empty, rm" >> "${file}.txt"
-                rm -rf ${recordDir}
-            fi
-        else
-            # 腳本目錄不存在
-            echo -e "${recordDir} not exist"
-            echo -e "${recordDir} not exist" >> "${file}.txt"
-        fi
-
-        if [ -d "${slurmDir}" ]; then
-
-            # 腳本目錄存在
-            echo -e "${slurmDir} exist"
-            echo -e "${slurmDir} exist" >> "${file}.txt"
-
-            if [ "$(ls -A ${slurmDir})" ]; then
-                echo "${slurmDir} is not Empty, do not rm"
-                echo "${slurmDir} is not Empty, do not rm" >> "${file}.txt"
-            else
-                echo "rm -rf ${slurmDir}"
-                echo "${slurmDir} is Empty, rm" >> "${file}.txt"
-                rm -rf ${slurmDir}                                
-            fi
-        else
-            # 腳本目錄不存在
-            echo -e "${slurmDir} not exist"
-            echo -e "${slurmDir} not exist" >> "${file}.txt"
-        fi
+        
 done
 
 echo "\n\n RM_empty_Orderparameter:${orderparameter};Partition: ${partition} ;Number of core: ${Ncore} ;Spin:${Spin} ;L: ${L1} ~ ${L2} ( ${space_L} );J: ${J1} ~ ${J2} ( ${space_J} ) ;D: ${D1} ~ ${D2} ( ${space_D} ) ;BC=$BC"

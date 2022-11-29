@@ -228,11 +228,11 @@ do
                         #     continue
                         # fi
 
-                        cp ./${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh
+                        cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh
 
-                        echo -e "cp ./${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" 
+                        echo -e "cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" 
 
-                        echo -e "cp ./${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" >> "${file}.txt"
+                        echo -e "cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" >> "${file}.txt"
 
                         scriptDirection="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh"
                         

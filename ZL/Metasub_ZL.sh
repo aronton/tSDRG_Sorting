@@ -219,13 +219,13 @@ do
                         #     continue
                         # fi
 
-                        cp ./Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                        cp ./ZL/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 
-                        echo -e "./Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
+                        echo -e "./ZL/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
 
-                        echo -e "./Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
+                        echo -e "./ZL/Zsub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
 
-                        replace1="L""$L""/""$Jdis"'/'"$Dim"'/ZL_spin'"${Spin}"'_L'"$L"'_'"$Jdis"'_'"$Dim"'_seed1='"$s1"'_seed2='"$s2"
+                        replace1="${orderparameter}/""L""$L""/""$Jdis"'/'"$Dim"'/ZL_spin'"${Spin}"'_L'"$L"'_'"$Jdis"'_'"$Dim"'_seed1='"$s1"'_seed2='"$s2"
 
                         sed -e "s@fileName@$replace1@" -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 

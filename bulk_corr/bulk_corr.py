@@ -93,7 +93,9 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
     #     # dx even
     
     if(len(bulk_dx_accumulate_frame["x1"]) == 0):
-        print("No data for L=%d, J=%.2f, D=%.2f", %(L,J,D))
+        # print("No data")
+        # print("L=%d" )
+        print("No data for L=%d, J=%.2f, D=%.2f" %(L,J,D))
         return 0
 
     # bulk corr is defined as (-1)^dx < SS > 

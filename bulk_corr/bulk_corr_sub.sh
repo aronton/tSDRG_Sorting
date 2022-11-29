@@ -17,7 +17,7 @@ echo "final_Seed        ==> ${9}"
 
 date
     # python /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/bulk_corr/bulk_corr.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9}
-    python ./bulk_corr.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9}
+    python ./bulk_corr/bulk_corr.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9}
 echo -e "\ndone.\n\n"
 date
 
