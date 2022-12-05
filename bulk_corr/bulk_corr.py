@@ -31,15 +31,15 @@ def get_dx_frame(dx, originalframe, L, J, D, seed):
 
 
 # get average from dx seperate frame
-def get_ave_frame(dx, L, J, D, int_seed, final_seed):
+def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
 
     # dx seperate directory path
     bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
     print("accumulate_dir_path\n",bulk_dx_seperate_dir_path)
 
-    if(os.path.exists(bulk_dx_seperate_dir_path) == False):
-        os.makedirs(bulk_dx_seperate_dir_path)
+    # if(os.path.exists(bulk_dx_seperate_dir_path) == False):
+    #     os.makedirs(bulk_dx_seperate_dir_path)
 
     # dx seperate csv file path
     bulk_dx_seperate_csv_path = bulk_dx_seperate_dir_path + "L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + "seed_num" +".csv"
@@ -51,7 +51,7 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
     bulk_dx_accumulate_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_accumulate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
     # dx accumulate csv file path
-    bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed1_" + str(int_seed) + "_seed2_" + str(final_seed) + ".csv"
+    bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed1_" + str(intial_seed) + "_seed2_" + str(final_seed) + ".csv"
 
     print("ave_path\n",bulk_dx_accumulate_path)
 
@@ -64,7 +64,7 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
     bulk_dx_accumulate_frame['corr'] = bulk_dx_accumulate_frame['corr'].astype('float')
     bulk_dx_accumulate_frame['dx'] = bulk_dx_accumulate_frame['dx'].astype('int')
 
-    for seed in range(int_seed, final_seed + 1):
+    for seed in range(intial_seed, final_seed + 1):
 
         print("bulk_dx_seperate_csv_path\n",bulk_dx_seperate_csv_path)
 
@@ -91,18 +91,22 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
     #     bulk_mean = -bulk_dx_accumulate_frame["corr"].mean()
     # else:
     #     # dx even
-    
+
+    # No data from seperate frame, jump out
     if(len(bulk_dx_accumulate_frame["x1"]) == 0):
         # print("No data")
         # print("L=%d" )
         print("No data for L=%d, J=%.2f, D=%.2f" %(L,J,D))
         return 0
 
+    if(os.path.exists(bulk_dx_seperate_dir_path) == False):
+        os.makedirs(bulk_dx_seperate_dir_path)
+
     # bulk corr is defined as (-1)^dx < SS > 
     bulk_mean = (-1)**dx*bulk_dx_accumulate_frame["corr"].mean()
 
     bulk_error = bulk_dx_accumulate_frame["corr"].sem(ddof=1)
-    bulk_sample = final_seed - int_seed + 1
+    bulk_sample = final_seed - intial_seed + 1
 
     # average directory path
     ave_dir = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_ave/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
@@ -121,7 +125,7 @@ def get_ave_frame(dx, L, J, D, int_seed, final_seed):
 
 get_dx_frame_vector = np.vectorize(get_dx_frame, excluded=['originalframe','L','J','D', 'seed'])
 
-get_ave_frame_vector = np.vectorize(get_ave_frame, excluded=['L', 'J', 'D', 'int_seed', 'final_seed'])
+get_ave_frame_vector = np.vectorize(get_ave_frame, excluded=['L', 'J', 'D', 'intial_seed', 'final_seed'])
 
 # parameter input
 
@@ -190,16 +194,6 @@ for dx in dx_array:
 
 for seed_num in range(initial_Seed, final_Seed + 1):
 
-    # replace "seed_num" with int seed_num
-    accumulate_dir_path = accumulate_dir_path_temp.replace("seed_num", str(seed_num))
-
-    print("accumulate_dir_path:\n", accumulate_dir_path)
-
-    # replace "seed_num" with int seed_num
-    ave_csv_path = ave_dir_path_temp.replace("seed_num", str(seed_num))
-
-    print("ave_csv_path:\n", ave_csv_path)
-
     # path of source file
     source_csv = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ BC +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) + "_corr1" + '.csv'
 
@@ -207,6 +201,17 @@ for seed_num in range(initial_Seed, final_Seed + 1):
 
     if(os.path.exists(source_csv) == False):
         continue
+
+    # replace "seed_num" with int seed_num
+    # accumulate_dir_path = accumulate_dir_path_temp.replace("seed_num", str(seed_num))
+
+    # print("accumulate_dir_path:\n", accumulate_dir_path)
+
+    # replace "seed_num" with int seed_num
+    # ave_csv_path = ave_dir_path_temp.replace("seed_num", str(seed_num))
+
+    # print("ave_csv_path:\n", ave_csv_path)
+
     # read path file and create a new column call dx
     corr_frame = pd.read_csv(source_csv)
     dx_corr_series = corr_frame["x2"] - corr_frame["x1"]
