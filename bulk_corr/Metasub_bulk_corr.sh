@@ -17,7 +17,8 @@ echo "seed1        ==> ${16}"
 echo "seed2        ==> ${17}"
 echo "Nseed :   ==> ${18}"
 echo "BC :   ==> ${19}"
-# echo "delta seed :   ==> ${20}"
+echo "delta seed :   ==> ${20}"
+# echo "Cpus :   ==> ${21}"
 
 date
 
@@ -71,6 +72,9 @@ echo -e "BC=$BC"
 
 deltaSeed=${20}
 echo -e "deltaSeed=$deltaSeed"
+
+# cpus=${21}
+# echo -e "cpus=$cpus"
 
 sorting_Path="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/submit_record/"
 
@@ -248,7 +252,7 @@ do
 
                         sed -e "s@cpus-per-task@cpus-per-task=${Ncore}@" -i ${scriptDirection}
                         
-                        sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2} 
+                        sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2} ${Ncore}
 
                         echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2}\n" 
 

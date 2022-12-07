@@ -21,6 +21,7 @@ read -p "Nseed : " Nseed
 read -p "BC : " BC
 read -p "deltaSeed : " deltaSeed
 
+
 echo "Partition:" ${partition} "Number of core:" ${cpuspertask} "Spin:${Spin}"";L:"${L1}"~" ${L2} "(" ${space_L} ")" ";J:" ${J1} "~" ${J2} "(" ${space_J} ")" ";D:" ${D1} "~" ${D2} "(" ${space_D} ")" ",seed1:" ${s1} ",seed2:" ${s2} "Orderparameter:" ${orderparameter}
 
 read -p "Continue or not (Y/N): " Continue

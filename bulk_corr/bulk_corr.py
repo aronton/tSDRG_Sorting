@@ -4,10 +4,12 @@ import os
 import math
 import pandas as pd 
 import numpy as np
+import multiprocessing as mp
+from functools import partial
+
 # import matplotlib.pyplot as plt 
 # from scipy.optimize import curve_fit
 import sys
-
 # seperate dx from each source file 
 def get_dx_frame(dx, originalframe, L, J, D, seed):
 
@@ -147,6 +149,8 @@ initial_Seed = int(sys.argv[8])
 
 final_Seed = int(sys.argv[9])
 
+cpus = int(sys.argv[10])
+
 print("\n---------------Parameter List----------------\n")
 
 print("spin:",spin)
@@ -220,7 +224,19 @@ for seed_num in range(initial_Seed, final_Seed + 1):
     corr_frame["dx"] = dx_corr_series
 
     # seperate dx frome source frame
-    get_dx_frame_vector(dx_array, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)
+    with mp.Pool(cpus) as p1:
+        p_x1 = partial(get_dx_frame, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)
+        p1.map(p_x1, dx_array)
+    # get_dx_frame_vector(dx_array, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)
+
 
 # get average from each seperate dx frome
-get_ave_frame_vector(dx_array, L=L, J=jdis, D=dim, int_seed=initial_Seed, final_seed=final_Seed)
+with mp.Pool(cpus) as p2:
+    p_x2 = partial(get_ave_frame, L=L, J=jdis, D=dim, intial_seed=initial_Seed, final_seed=final_Seed)
+    p2.map(p_x2, dx_array)
+# get_ave_frame_vector(dx_array, L=L, J=jdis, D=dim, intial_seed=initial_Seed, final_seed=final_Seed)
+
+
+# get_dx_frame_vector = np.vectorize(get_dx_frame, excluded=['originalframe','L','J','D', 'seed'])
+
+# get_ave_frame_vector = np.vectorize(get_ave_frame, excluded=['L', 'J', 'D', 'intial_seed', 'final_seed'])
