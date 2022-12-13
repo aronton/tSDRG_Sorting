@@ -17,7 +17,9 @@ echo "seed1        ==> ${16}"
 echo "seed2        ==> ${17}"
 echo "Nseed :   ==> ${18}"
 echo "BC :   ==> ${19}"
-echo "delta seed :   ==> ${20}"
+echo "dx_1 :   ==> ${20}"
+echo "dx_2 :   ==> ${21}"
+echo "delta seed :   ==> ${22}"
 # echo "Cpus :   ==> ${21}"
 
 date
@@ -70,7 +72,15 @@ echo -e "Nseed=$Nseed"
 BC=${19}
 echo -e "BC=$BC"
 
-deltaSeed=${20}
+dx=${20}
+echo -e "dx=$dx"
+
+# dx_2=${21}
+# echo -e "dx_2=$dx_2"
+
+# dx_1=dx_2-dx
+
+deltaSeed=${21}
 echo -e "deltaSeed=$deltaSeed"
 
 # cpus=${21}
@@ -90,13 +100,13 @@ else
     mkdir -p "${sorting_Path}""${now_date}"
 fi
 
-file="${sorting_Path}${now_date}Orderparameter=${orderparameter};P=${P};B=${bonDim};L=${L1}_${L2}(${space_L});J=${J1}_${J2}(${space_J});D=${D1}_${D2}(${space_D});seed1=${seed1}_seed2=${seed2};Partition=${partition};BC=${BC};Number_of_core=${Ncore}"
+file="${sorting_Path}${now_date}Orderparameter=${orderparameter};P=${P};B=${bonDim};L=${L1}_${L2}(${space_L});J=${J1}_${J2}(${space_J});D=${D1}_${D2}(${space_D});seed1=${seed1}_seed2=${seed2};Partition=${partition};BC=${BC};Number_of_core=${Ncore};dx=${dx}"
 
 echo -e "${file}"
 
 date >> "${file}.txt"
 
-echo -e "Partition:${partition};Number of core:${Ncore};Spin:${Spin};L:${L1}~${L2}(${space_L});J:${J1}~${J2}(${space_J});D:${D1}~${D2}(${space_D}),seed1:${seed1},seed2:${seed2};Orderparameter:${orderparameter};BC=${BC}" >> "${file}.txt"
+echo -e "Partition:${partition};Orderparameter:${orderparameter};Number of core:${Ncore};BC=${BC};P=${P};B=${bonDim};Spin:${Spin};L:${L1}~${L2}(${space_L});J:${J1}~${J2}(${space_J});D:${D1}~${D2}(${space_D}),seed1:${seed1},seed2:${seed2};dx=${dx}" >> "${file}.txt"
 
 if [ "${space_L}" == "0" ]
 then
@@ -232,13 +242,16 @@ do
                         #     continue
                         # fi
 
-                        cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh
+                        dx_2=$((${L}/2))
+                        dx_1=$((${dx_2}-${dx}))
 
-                        echo -e "cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" 
+                        cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}_dx1_${dx_1}_dx2_${dx_2}.sh
 
-                        echo -e "cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh\n" >> "${file}.txt"
+                        echo -e "cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}_dx1_${dx_1}_dx2_${dx_2}.sh\n" 
 
-                        scriptDirection="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}.sh"
+                        echo -e "cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}_dx1_${dx_1}_dx2_${dx_2}.sh\n" >> "${file}.txt"
+
+                        scriptDirection="/home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${seed1}_seed2=${seed2}_dx1_${dx_1}_dx2_${dx_2}.sh"
                         
                         echo -e "${scriptDirection}"
 
@@ -252,18 +265,18 @@ do
 
                         sed -e "s@cpus-per-task@cpus-per-task=${Ncore}@" -i ${scriptDirection}
                         
-                        sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2} ${Ncore}
+                        sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2} ${dx_1} ${dx_2} ${Ncore}
 
-                        echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2}\n" 
+                        echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2} ${dx_1} ${dx_2} ${Ncore}\n" 
 
-                        echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2}\n" >> "${file}.txt"
+                        echo -e "sbatch ${scriptDirection} ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${seed1} ${seed2} ${dx_1} ${dx_2} ${Ncore}\n" >> "${file}.txt"
                 done
         done
 done
 
-echo "\n\n Orderparameter:${orderparameter};Partition: ${partition} ;Number of core: ${Ncore} ;Spin:${Spin} ;L: ${L1} ~ ${L2} ( ${space_L} );J: ${J1} ~ ${J2} ( ${space_J} ) ;D: ${D1} ~ ${D2} ( ${space_D} ) ,seed1: ${s1} ,seed2: ${s2} ;BC=$BC"
+echo "\n\n Partition:${partition};Orderparameter:${orderparameter};Number of core:${Ncore};BC=${BC};P=${P};B=${bonDim};Spin:${Spin};L:${L1}~${L2}(${space_L});J:${J1}~${J2}(${space_J});D:${D1}~${D2}(${space_D}),seed1:${seed1},seed2:${seed2};dx_1=${dx_1}_dx_2=${dx_2}"
 
-echo -e "\n\n Orderparameter:${orderparameter};Partition: ${partition} ;Number of core: ${Ncore} ;Spin:${Spin} ;L: ${L1} ~ ${L2} ( ${space_L} );J: ${J1} ~ ${J2} ( ${space_J} ) ;D: ${D1} ~ ${D2} ( ${space_D} ) ,seed1: ${s1} ,seed2: ${s2} ;BC=$BC">> "${file}.txt"
+echo -e "\n\n Partition:${partition};Orderparameter:${orderparameter};Number of core:${Ncore};BC=${BC};P=${P};B=${bonDim};Spin:${Spin};L:${L1}~${L2}(${space_L});J:${J1}~${J2}(${space_J});D:${D1}~${D2}(${space_D}),seed1:${seed1},seed2:${seed2};dx_1=${dx_1}_dx_2=${dx_2}">> "${file}.txt"
 
 echo -e "\ndone."
 date

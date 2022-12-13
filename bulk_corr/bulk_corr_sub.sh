@@ -13,13 +13,15 @@ echo "jdis         ==> ${6}"
 echo "dim         ==> ${7}"
 echo "init_Seed         ==> ${8}"
 echo "final_Seed        ==> ${9}"
-echo "cpus        ==> ${10}"
+echo "dx_1         ==> ${10}"
+echo "dx_2        ==> ${11}"
+echo "cpus        ==> ${12}"
 
 
 
 date
     # python /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/bulk_corr/bulk_corr.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9}
-    python ./bulk_corr/bulk_corr.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9} ${10}
+    python ./bulk_corr/bulk_corr.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9} ${10} ${11} ${12}
 echo -e "\ndone.\n\n"
 date
 

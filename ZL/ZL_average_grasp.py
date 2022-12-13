@@ -6,6 +6,7 @@ import time
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt 
+import multiprocessing as mp
 from scipy.optimize import curve_fit
 import sys
 
@@ -188,6 +189,8 @@ if(initial_Seed != 1):
 else:
     print("start from seed 1, creat one")
     accumulation_frame = pd.DataFrame(columns = ['ZL','seed_num'])
+    print("accumulation_frame\n")
+    print(accumulation_frame)
 
     die_seed_frame = pd.DataFrame(columns = ['die_seed_num'])
     print("die_seed_frame\n")
