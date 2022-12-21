@@ -29,6 +29,9 @@ def get_dx_frame(dx, originalframe, L, J, D, seed):
     outputframe = originalframe[originalframe["dx"] == dx] # 取出 "dx" column 中和 dx 相同的
     outputframe.to_csv(bulk_dx_seperate_csv_path, index = False)
 
+    print("seperate:%d,%s,%s,%s,%d" %(dx,L,J,D,seed))
+    print(bulk_dx_seperate_csv_path)
+
     return 0
 
 
@@ -50,18 +53,21 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
 
 
     # dx accumulate directory path
-    bulk_dx_accumulate_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_accumulate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+    bulk_dx_accumulate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_accumulate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
-    if(os.path.exists(bulk_dx_accumulate_path) == False):
-        os.makedirs(bulk_dx_accumulate_path)
+    if(os.path.exists(bulk_dx_accumulate_dir_path) == False):
+        os.makedirs(bulk_dx_accumulate_dir_path)
 
     # # dx accumulate csv file path
     # bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed1_" + str(intial_seed) + "_seed2_" + str(final_seed) + ".csv"
 
     # dx accumulate csv file path
-    bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + str(final_seed) + ".csv"
+    bulk_dx_accumulate_csv_path = bulk_dx_accumulate_dir_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + ".csv"
 
-    print("bulk_dx_accumulate_path\n",bulk_dx_accumulate_path)
+    # bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + str(final_seed) + ".csv"
+
+
+    print("bulk_dx_accumulate_csv_path\n",bulk_dx_accumulate_csv_path)
 
     # create dx accumulate frame empty
     bulk_dx_accumulate_frame = pd.DataFrame({"x1":[],"x2":[],"dx":[],"corr":[],"seed":[]})
@@ -95,9 +101,11 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
         bulk_dx_accumulate_frame = bulk_dx_accumulate_frame.append(bulk_dx_seperate_csv_path_frame, ignore_index = True)
         print("seed\n", seed)
         print("bulk_dx_accumulate_frame\n", bulk_dx_accumulate_frame)
-        bulk_dx_accumulate_frame['seed'][0] = seed
+        
         # bulk_dx_accumulate_frame.to_csv(bulk_dx_accumulate_path, index = False)
-    bulk_dx_accumulate_frame.to_csv(bulk_dx_accumulate_path, index = False)
+    bulk_dx_accumulate_frame['seed'][0] = int(final_seed)
+    bulk_dx_accumulate_frame['seed'] = bulk_dx_accumulate_frame['seed'].astype('int')
+    bulk_dx_accumulate_frame.to_csv(bulk_dx_accumulate_csv_path, index = False)
     # bulk corr is defined as (-1)^dx < SS > 
     # if( ( dx % 2 ) != 0 ):
     #     # dx odd
@@ -117,7 +125,6 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
 
     # bulk corr is defined as (-1)^dx < SS > 
     bulk_mean = (-1)**dx*bulk_dx_accumulate_frame["corr"].mean()
-
     bulk_error = bulk_dx_accumulate_frame["corr"].sem(ddof=1)
     bulk_sample = len(bulk_dx_accumulate_frame["x1"])
 
@@ -183,31 +190,42 @@ print("\n---------------Direction Path----------------\n")
 
 # bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
-# template of accumulate_dir_path
-accumulate_dir_path_temp = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'bulk_dx_seperate/' + jdis +'/' + dim +'/' + "L" + str(L) + "/dx_" + "dx_num/"
+# # template of accumulate_dir_path
+# accumulate_dir_path_temp = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'bulk_dx_seperate/' + jdis +'/' + dim +'/' + "L" + str(L) + "/dx_" + "dx_num/"
 
-# template of accumulate_csv_path
-accumulate_csv_path_temp = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'bulk_dx_seperate/' + jdis +'/' + dim +'/' + "L" + str(L) + "/dx_" + "dx_num" + "/L" + str(L) + "_" + jdis + "_" + dim + "_dx_" + "dx_num" + "_seed_" + str(final_Seed - initial_Seed + 1) + ".csv"
+# # template of accumulate_csv_path
+# accumulate_csv_path_temp = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'bulk_dx_seperate/' + jdis +'/' + dim +'/' + "L" + str(L) + "/dx_" + "dx_num" + "/L" + str(L) + "_" + jdis + "_" + dim + "_dx_" + "dx_num" + "_seed_" + str(final_Seed - initial_Seed + 1) + ".csv"
 
-print(accumulate_dir_path_temp)
-print("\n")
-print(accumulate_csv_path_temp)
-print("\n")
+# print(accumulate_dir_path_temp)
+# print("\n")
+# print(accumulate_csv_path_temp)
+# print("\n")
 
-# template of ave_dir_path
-ave_dir_path_temp = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'bulk_dx_accumulate/' + jdis +'/' + dim +'/' + "L" + str(L) + "/dx_" + "dx_num"
+# # template of ave_dir_path
+# ave_dir_path_temp = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'bulk_dx_accumulate/' + jdis +'/' + dim +'/' + "L" + str(L) + "/dx_" + "dx_num"
 
-# template of ave_csv_path
-ave_csv_path_temp = ave_dir_path_temp + "/L" + str(L) + "_" + jdis + "_" + dim + "_dx_" + "dx_num" + "_smaple_" + str(final_Seed - initial_Seed + 1) + ".csv"
+# # template of ave_csv_path
+# ave_csv_path_temp = ave_dir_path_temp + "/L" + str(L) + "_" + jdis + "_" + dim + "_dx_" + "dx_num" + "_smaple_" + str(final_Seed - initial_Seed + 1) + ".csv"
 
 
-print(ave_dir_path_temp)
-print("\n")
-print(ave_csv_path_temp)
-print("\n")
+# print(ave_dir_path_temp)
+# print("\n")
+# print(ave_csv_path_temp)
+# print("\n")
 
 dx_array = np.array(np.linspace(dx_i,dx_f,dx_f-dx_i+1), dtype = int)
 
+# # dx seperate directory
+# bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+
+# # dx csv file
+# bulk_dx_seperate_csv_path = bulk_dx_seperate_dir_path + "L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + "temp" +".csv"
+
+# # dx accumulate directory path
+# bulk_dx_accumulate_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_accumulate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+
+# # dx accumulate csv file path
+# bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + "temp" + ".csv"
 # for dx in dx_array:
 
 #     dir = ave_dir_path_temp.replace("dx_num",str(dx))
