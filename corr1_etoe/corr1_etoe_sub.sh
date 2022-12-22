@@ -20,6 +20,6 @@ echo "final_Seed        ==> ${9}"
 
 
 date
-    python ./corr_EtoE/corr_EtoE_average_grasp.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9} 
+    python ./corr1_etoe/corr1_etoe_average_grasp.py ${1} ${2} ${3} ${4} ${5} ${6} ${7} ${8} ${9} 
 echo -e "\ndone.\n\n"
 date

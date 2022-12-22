@@ -168,13 +168,13 @@ do
                                 seed_found=$k
                                 
                                 # Source csv path
-                                path="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/ZL.csv"
+                                path="/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/${BC}/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/${orderparameter}.csv"
 
-                                echo -e "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/ZL.csv\n"
+                                echo -e "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/${BC}/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/${orderparameter}.csv\n"
 
-                                echo -e "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/ZL.csv\n" >> "${file}.txt"
+                                echo -e "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/${BC}/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/${orderparameter}.csv\n" >> "${file}.txt"
 
-                                if [ -f "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/PBC/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/ZL.csv" ] ; then
+                                if [ -f "/home/aronton/tSDRG_project/tSDRG/Main_${Spin}/data/${BC}/${Jdis}/${Dim}/L${L}_P${ProbDis}_m${bonDim}_${k}/${orderparameter}.csv" ] ; then
                                     s2=$seed_found
                                     echo -e "seed=${seed_found} is found\n"
                                     echo -e "seed=${seed_found} is found\n" >> "${file}"".txt"
@@ -219,27 +219,27 @@ do
                         #     continue
                         # fi
 
-                        cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                        cp ./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 
-                        echo -e "./corr_EtoE/corr_EtoE_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
+                        echo -e "./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" 
 
-                        echo -e "./corr_EtoE/corr_EtoE_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
+                        echo -e "./${orderparameter}/${orderparameter}_sub.sh /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh\n" >> "${file}.txt"
 
-                        replace1="${orderparameter}/""L""$L""/""$Jdis"'/'"$Dim"'/${orderparameter}_spin'"${Spin}"'_L'"$L"'_'"$Jdis"'_'"$Dim"'_seed1='"$s1"'_seed2='"$s2"
+                        replace1=${orderparameter}"/L"$L"/"$Jdis"/"$Dim"/"${orderparameter}"_spin"${Spin}"_L"$L"_"$Jdis"_"$Dim"_seed1="$s1"_seed2="$s2
 
-                        sed -e "s@fileName@$replace1@" -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                        sed -e "s@fileName@$replace1@" -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 
-                        sed -e 's/Spin/Spin'"$Spin"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                        sed -e 's/Spin/Spin'"$Spin"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
 
-                        sed -e 's/scopion/scopion'"$partition"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
+                        sed -e 's/scopion/scopion'"$partition"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh
                         
-                        sed -e 's/cpus-per-task/cpus-per-task='"$Ncore"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh 
+                        sed -e 's/cpus-per-task/cpus-per-task='"$Ncore"'/' -i /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh 
 
-                        sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${s1} ${s2} 
+                        sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${s1} ${s2} 
 
-                        echo -e "sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${s1} ${s2}\n" 
+                        echo -e "sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${s1} ${s2}\n" 
 
-                        echo -e "sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/ZL_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${s1} ${s2}\n" >> "${file}.txt"
+                        echo -e "sbatch /home/aronton/tSDRG_project/Sorting_data/Spin${Spin}/record/${orderparameter}/L${L}/${Jdis}/${Dim}/${orderparameter}_spin${Spin}_L${L}_${Jdis}_${Dim}_seed1=${s1}_seed2=${s2}.sh ${Spin} ${BC} ${ProbDis} ${bonDim} ${L} ${Jdis} ${Dim} ${s1} ${s2}\n" >> "${file}.txt"
 
                 done
         done

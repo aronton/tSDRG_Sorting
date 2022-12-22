@@ -70,24 +70,24 @@ print("\n---------------Direction Path----------------\n")
 # if(os.path.exists(direc4) == False):
 #     os.mkdir(direc4)
 
-accumulation_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation11/' + jdis +'/' + dim +'/'
+accumulation_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation/' + jdis +'/' + dim +'/'
 
 if(os.path.exists(accumulation_dir_path) == False):
     os.makedirs(accumulation_dir_path)
 
-accumulation_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL_Accumulation11/' + jdis +'/' + dim +'/' +'corr_etoe_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+accumulation_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation/' + jdis +'/' + dim +'/' +'corr_etoe_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
 
 # accumulation_path = direc4 +'ZL_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
 # die_seed_path = direc4 +'ZL_Die_Seed_' + jdis + "_" + dim + '_' + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
-die_seed_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_die_seed/' + jdis +'/' + dim +'/' 
+# die_seed_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_die_seed/' + jdis +'/' + dim +'/' 
 
-if(os.path.exists(die_seed_dir_path) == False):
-    os.makedirs(die_seed_dir_path)
+# if(os.path.exists(die_seed_dir_path) == False):
+#     os.makedirs(die_seed_dir_path)
 
-die_seed_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation11/' + jdis +'/' + dim +'/' +'ZL_Die_Seed_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+# die_seed_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation11/' + jdis +'/' + dim +'/' +'ZL_Die_Seed_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
 # direc1_ave = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/'
 # print(direc1_ave)
@@ -134,7 +134,9 @@ print("\n")
 
 print("\n---------------averageFrame----------------\n")
 
-averageFrame = pd.DataFrame(columns = ['corr_etoe', 'error', 'Nseed'])
+averageFrame = pd.DataFrame(columns = ['corr_etoe', 'error', 'seed'])
+averageFrame['seed'] = averageFrame['seed'].astype('int')
+
 print("averageFrame",averageFrame)
 
 print("\n----------------Start---------------\n")
@@ -177,7 +179,7 @@ if(initial_Seed != 1):
         if(os.path.exists(my_csv)):
             inputFrame = pd.read_csv(my_csv)
             ZL = inputFrame.at[0, "ZL"]
-            accumulation_frame = accumulation_frame.append({"ZL": ZL,"seed_num": int(seed_num)}, ignore_index=True)
+            accumulation_frame = accumulation_frame.append({"corr_EtoE": ZL,"seed_num": int(seed_num)}, ignore_index=True)
         else:
             if(os.path.exists(my_file)):
                 die_seed_frame.append({"die_seed_num": int(seed_num)},ignore_index=True)
