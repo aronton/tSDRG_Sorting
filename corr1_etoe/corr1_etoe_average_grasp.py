@@ -116,12 +116,12 @@ accumulation_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) 
 
 # average_path = direc4_ave + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
 
-average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "corr_etoe/" + jdis +'/' + dim + '/' + "dx_" + str(L-1)
+average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "corr_etoe/" + jdis +'/' + dim + '/'
 
 if(os.path.exists(average_dir_path) == False):
     os.makedirs(average_dir_path)
 
-average_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "corr_etoe/" + jdis +'/' + dim + '/' + "corr_etoe" + "_P_" + str(probDis) + "_m" + str(chi) + "_" + jdis + "_" + dim + 'dx_' + str(L-1) + '.csv'
+average_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "corr_etoe/" + jdis +'/' + dim + '/' + "corr_etoe_" + "L" + str(L) + "_P_" + str(probDis) + "_m" + str(chi) + "_" + jdis + "_" + dim + '.csv'
 
 print("accumulation_path:")
 print(accumulation_path)
@@ -134,10 +134,18 @@ print("\n")
 
 print("\n---------------averageFrame----------------\n")
 
-averageFrame = pd.DataFrame(columns = ['corr_etoe', 'error', 'seed'])
-averageFrame['seed'] = averageFrame['seed'].astype('int')
+averageFrame = pd.DataFrame(columns = ['corr_etoe', 'error', 'Nseed', 'Nsample'])
+averageFrame['Nseed'] = averageFrame['Nseed'].astype('int')
+averageFrame['Nsample'] = averageFrame['Nsample'].astype('int')
+
 
 print("averageFrame",averageFrame)
+
+# accumulation_frame = pd.DataFrame(columns = ['corr_etoe', 'seed_num'])
+# averageFrame['seed_num'] = averageFrame['seed_num'].astype('int')
+
+# print("accumulation_frame",accumulation_frame)
+
 
 print("\n----------------Start---------------\n")
 
@@ -177,9 +185,12 @@ if(initial_Seed != 1):
         my_file = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ BC +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) 
 
         if(os.path.exists(my_csv)):
-            inputFrame = pd.read_csv(my_csv)
-            ZL = inputFrame.at[0, "ZL"]
-            accumulation_frame = accumulation_frame.append({"corr_EtoE": ZL,"seed_num": int(seed_num)}, ignore_index=True)
+            try:
+                inputFrame = pd.read_csv(my_csv)
+            except:
+                continue      
+            corr_etoe = inputFrame.at[0, "corr"]
+            accumulation_frame = accumulation_frame.append({"corr_etoe": corr_etoe,"seed_num": int(seed_num)}, ignore_index=True)
         else:
             if(os.path.exists(my_file)):
                 die_seed_frame.append({"die_seed_num": int(seed_num)},ignore_index=True)
@@ -191,12 +202,14 @@ if(initial_Seed != 1):
 else:
     print("start from seed 1, creat one")
     accumulation_frame = pd.DataFrame(columns = ['corr_etoe','seed_num'])
+    accumulation_frame['seed_num'] = accumulation_frame['seed_num'].astype('int')
+
     print("accumulation_frame\n")
     print(accumulation_frame)
 
-    die_seed_frame = pd.DataFrame(columns = ['die_seed_num'])
-    print("die_seed_frame\n")
-    print(die_seed_frame)
+    # die_seed_frame = pd.DataFrame(columns = ['die_seed_num'])
+    # print("die_seed_frame\n")
+    # print(die_seed_frame)
     
     
     for seed_num in range(initial_Seed, final_Seed + 1):
@@ -206,9 +219,12 @@ else:
         my_file = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ "OBC" +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) 
 
         if(os.path.exists(my_csv)):
-            inputFrame = pd.read_csv(my_csv)
+            try:
+                inputFrame = pd.read_csv(my_csv)
+            except:
+                continue            
             corr_etoe = inputFrame.at[0, "corr"]
-            accumulation_frame = accumulation_frame.append({"corr_etoe": corr_etoe,"seed_num": int(seed_num)}, ignore_index=True)
+            accumulation_frame = accumulation_frame.append({"corr_etoe": -corr_etoe,"seed_num": int(seed_num)}, ignore_index=True)
         else:
             # two situation, die seed or file broken
             if(os.path.exists(my_file)):
@@ -226,7 +242,12 @@ Nsample = len(accumulation_frame.index)
 average = accumulation_frame.mean()["corr_etoe"]
 std = accumulation_frame.std()["corr_etoe"]
 error = std/np.sqrt(Nsample)
-averageFrame = averageFrame.append({"corr_etoe":average,"error":error,"Nseed":final_Seed}, ignore_index=True)
+averageFrame = averageFrame.append({"corr_etoe":average,"error":error,"Nseed":final_Seed,"Nsample":Nsample}, ignore_index=True)
+
+averageFrame["Nseed"] = averageFrame["Nseed"].astype('int')
+averageFrame["Nsample"] = averageFrame["Nsample"].astype('int')
+
+accumulation_frame['seed_num'] = accumulation_frame['seed_num'].astype('int')
 
 
 end_time = time.time()
@@ -242,8 +263,8 @@ print("average",average)
 print("std",std)
 print("error",error)
 
-print("accumulation_frame:\n")
-print(accumulation_frame)
+# print("accumulation_frame:\n")
+# print(accumulation_frame)
 if(accumulation_frame["corr_etoe"].isnull().any() == True):
     print("accumulation_frame : No data")
     print(accumulation_frame)
@@ -252,8 +273,8 @@ else:
     print(accumulation_frame)
 
 
-print("averageFrame:\n")
-print(averageFrame)
+# print("averageFrame:\n")
+# print(averageFrame)
 if(averageFrame["corr_etoe"].isnull().any() == True):
     print("averageFrame : No data")
     print(averageFrame)
@@ -262,13 +283,13 @@ else:
     print(averageFrame)
 
 
-print("die_seed_frame:\n")
-print(die_seed_frame)
-if(die_seed_frame["die_seed_num"].isnull().any() == True):
-    print("die_seed_num : No data")
-    print(die_seed_frame)
-else:
-    die_seed_frame.to_csv(die_seed_path, index=False)
-    print(die_seed_frame)
+# print("die_seed_frame:\n")
+# print(die_seed_frame)
+# if(die_seed_frame["die_seed_num"].isnull().any() == True):
+#     print("die_seed_num : No data")
+#     print(die_seed_frame)
+# else:
+#     die_seed_frame.to_csv(die_seed_path, index=False)
+#     print(die_seed_frame)
 
 print('all done')
