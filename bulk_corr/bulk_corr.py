@@ -11,10 +11,10 @@ from functools import partial
 # from scipy.optimize import curve_fit
 import sys
 # seperate dx from each source file 
-def get_dx_frame(dx, originalframe, L, J, D, seed):
+def get_dx_frame(dx, spin, originalframe, L, J, D, seed):
 
     # dx seperate directory
-    bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+    bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
     if(os.path.exists(bulk_dx_seperate_dir_path) == False):
         os.makedirs(bulk_dx_seperate_dir_path)
@@ -36,12 +36,12 @@ def get_dx_frame(dx, originalframe, L, J, D, seed):
 
 
 # get average from dx seperate frame
-def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
+def get_ave_frame(dx, spin, L, J, D, intial_seed, final_seed):
 
     # dx seperate directory path
-    bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+    bulk_dx_seperate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/metadata/bulk_dx_seperate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
-    print("accumulate_dir_path\n",bulk_dx_seperate_dir_path)
+    # print("accumulate_dir_path\n",bulk_dx_seperate_dir_path)
 
     if(os.path.exists(bulk_dx_seperate_dir_path) == False):
         os.makedirs(bulk_dx_seperate_dir_path)
@@ -49,11 +49,11 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
     # dx seperate csv file path
     bulk_dx_seperate_csv_path = bulk_dx_seperate_dir_path + "L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + "seed_num" +".csv"
 
-    print("bulk_dx_seperate_csv_path\n",bulk_dx_seperate_csv_path)
+    # print("bulk_dx_seperate_csv_path\n",bulk_dx_seperate_csv_path)
 
 
     # dx accumulate directory path
-    bulk_dx_accumulate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_dx_accumulate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+    bulk_dx_accumulate_dir_path = "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/metadata/bulk_dx_accumulate/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
     if(os.path.exists(bulk_dx_accumulate_dir_path) == False):
         os.makedirs(bulk_dx_accumulate_dir_path)
@@ -67,7 +67,7 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
     # bulk_dx_accumulate_path = bulk_dx_accumulate_path + "/L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + "_seed_" + str(final_seed) + ".csv"
 
 
-    print("bulk_dx_accumulate_csv_path\n",bulk_dx_accumulate_csv_path)
+    # print("bulk_dx_accumulate_csv_path\n",bulk_dx_accumulate_csv_path)
 
     # create dx accumulate frame empty
     bulk_dx_accumulate_frame = pd.DataFrame({"x1":[],"x2":[],"dx":[],"corr":[],"seed":[]})
@@ -77,34 +77,35 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
     bulk_dx_accumulate_frame['x2'] = bulk_dx_accumulate_frame['x2'].astype('int')
     bulk_dx_accumulate_frame['corr'] = bulk_dx_accumulate_frame['corr'].astype('float')
     bulk_dx_accumulate_frame['dx'] = bulk_dx_accumulate_frame['dx'].astype('int')
-    bulk_dx_accumulate_frame['seed'] = bulk_dx_accumulate_frame['seed'].astype('int')
+    # bulk_dx_accumulate_frame['seed'] = bulk_dx_accumulate_frame['seed'].astype('int')
 
 
 
     for seed in range(intial_seed, final_seed + 1):
 
-        print("bulk_dx_seperate_csv_path\n",bulk_dx_seperate_csv_path)
+        # print("bulk_dx_seperate_csv_path\n",bulk_dx_seperate_csv_path)
 
         # dx seperate scv path ( replace seed_num with seed )
         bulk_dx_seperate_csv_path_temp = bulk_dx_seperate_csv_path.replace("seed_num", str(seed)) 
 
-        print("bulk_dx_seperate_csv_path_temp\n", bulk_dx_seperate_csv_path_temp)
+        # print("bulk_dx_seperate_csv_path_temp\n", bulk_dx_seperate_csv_path_temp)
 
         if(os.path.exists(bulk_dx_seperate_csv_path_temp) == False):
             continue
 
         # dx seperate frame read from csv 
         bulk_dx_seperate_csv_path_frame = pd.read_csv(bulk_dx_seperate_csv_path_temp)
-        print("seed\n", seed)
-        print("bulk_dx_seperate_csv_path_frame\n", bulk_dx_seperate_csv_path_frame)
+        # print("seed\n", seed)
+        # print("bulk_dx_seperate_csv_path_frame\n", bulk_dx_seperate_csv_path_frame)
 
         bulk_dx_accumulate_frame = bulk_dx_accumulate_frame.append(bulk_dx_seperate_csv_path_frame, ignore_index = True)
         print("seed\n", seed)
         print("bulk_dx_accumulate_frame\n", bulk_dx_accumulate_frame)
         
         # bulk_dx_accumulate_frame.to_csv(bulk_dx_accumulate_path, index = False)
-    bulk_dx_accumulate_frame['seed'][0] = int(final_seed)
-    bulk_dx_accumulate_frame['seed'] = bulk_dx_accumulate_frame['seed'].astype('int')
+        # bulk_dx_accumulate_frame['seed'][int(seed)-1] = int(seed)
+    print("bulk_dx_accumulate_frame", bulk_dx_accumulate_frame)
+    # bulk_dx_accumulate_frame['seed'] = bulk_dx_accumulate_frame['seed'].astype('int')
     bulk_dx_accumulate_frame.to_csv(bulk_dx_accumulate_csv_path, index = False)
     # bulk corr is defined as (-1)^dx < SS > 
     # if( ( dx % 2 ) != 0 ):
@@ -112,7 +113,7 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
     #     bulk_mean = -bulk_dx_accumulate_frame["corr"].mean()
     # else:
     #     # dx even
-
+    print("bulk_dx_accumulate_frame", bulk_dx_accumulate_frame)
     # No data from seperate frame, jump out
     if(len(bulk_dx_accumulate_frame["x1"]) == 0):
         # print("No data")
@@ -129,18 +130,19 @@ def get_ave_frame(dx, L, J, D, intial_seed, final_seed):
     bulk_sample = len(bulk_dx_accumulate_frame["x1"])
 
     # average directory path
-    ave_dir = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_ave/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
+    ave_dir = "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/metadata/bulk_ave/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/"
 
     if(os.path.exists(ave_dir) == False):
         os.makedirs(ave_dir) 
 
     # average csv path
-    ave_csv = "/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/bulk_ave/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/" + "bulk_ave_L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + ".csv"
+    ave_csv = "/home/aronton/tSDRG_project/Sorting_data/Spin" + str(spin) + "/metadata/bulk_ave/" + str(J) + "/" + str(D) + "/" + "L" + str(L) + "/dx_" + str(dx) + "/" + "bulk_ave_L" + str(L) + "_" + str(J) + "_" + str(D) + "_dx_" + str(dx) + ".csv"
     
     # average frame
     ave_frame = pd.DataFrame({"bulk_corr":[bulk_mean],"error":[bulk_error],"tot_seed":[final_seed],"sample":[bulk_sample]})
     ave_frame['sample'] = ave_frame['sample'].astype('int')
     ave_frame['tot_seed'] = ave_frame['tot_seed'].astype('int')
+    print("ave_frame", ave_frame)
     ave_frame.to_csv(ave_csv, index = False)
     return 0
 
@@ -237,7 +239,7 @@ for seed_num in range(initial_Seed, final_Seed + 1):
     # path of source file
     source_csv = '/home/aronton/tSDRG_project/tSDRG/Main_' + str(spin) + '/data/'+ BC +'/'+ jdis + '/'+ dim + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) + '/L'+ str(L) +'_P'+ str(probDis) +'_m'+ str(chi) +'_'+ str(seed_num) + "_corr1" + '.csv'
 
-    print("source_csv:\n", source_csv)
+    # print("source_csv:\n", source_csv)
 
     if(os.path.exists(source_csv) == False):
         continue
@@ -261,15 +263,16 @@ for seed_num in range(initial_Seed, final_Seed + 1):
 
     # seperate dx frome source frame
     with mp.Pool(cpus) as p1:
-        p_x1 = partial(get_dx_frame, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)
+        p_x1 = partial(get_dx_frame, spin=spin, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)
         p1.map(p_x1, dx_array)
     # print("get_dx_frame_vector(dx_array, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)")
     # get_dx_frame_vector(dx_array, originalframe=corr_frame, L=L, J=jdis, D=dim, seed=seed_num)
 
+print("dx_array",dx_array)
 
 # get average from each seperate dx frome
 with mp.Pool(cpus) as p2:
-    p_x2 = partial(get_ave_frame, L=L, J=jdis, D=dim, intial_seed=initial_Seed, final_seed=final_Seed)
+    p_x2 = partial(get_ave_frame, spin=spin, L=L, J=jdis, D=dim, intial_seed=initial_Seed, final_seed=final_Seed)
     p2.map(p_x2, dx_array)
 # print("get_ave_frame_vector(dx_array, L=L, J=jdis, D=dim, intial_seed=initial_Seed, final_seed=final_Seed")
 # get_ave_frame_vector(dx_array, L=L, J=jdis, D=dim, intial_seed=initial_Seed, final_seed=final_Seed)

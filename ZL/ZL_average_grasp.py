@@ -116,7 +116,7 @@ die_seed_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/
 
 # average_path = direc4_ave + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
 
-average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL1/' + jdis +'/'
+average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'ZL1/' + jdis +'/' + dim
 
 if(os.path.exists(average_dir_path) == False):
     os.makedirs(average_dir_path)

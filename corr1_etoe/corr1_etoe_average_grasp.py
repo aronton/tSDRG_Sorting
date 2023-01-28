@@ -70,12 +70,12 @@ print("\n---------------Direction Path----------------\n")
 # if(os.path.exists(direc4) == False):
 #     os.mkdir(direc4)
 
-accumulation_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation/' + jdis +'/' + dim +'/'
+accumulation_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation/' + str(BC) + "/" + jdis +'/' + dim +'/'
 
 if(os.path.exists(accumulation_dir_path) == False):
     os.makedirs(accumulation_dir_path)
 
-accumulation_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + 'corr_etoe_Accumulation/' + jdis +'/' + dim +'/' +'corr_etoe_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
+accumulation_path = accumulation_dir_path +'/' +'corr_etoe_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
 
 
 # accumulation_path = direc4 +'ZL_Accumulation_' + jdis + "_" + dim + "_" + BC +'_L'+ str(L) +'_P' + str(probDis) + '_m'+ str(chi) + '.csv'
@@ -116,12 +116,12 @@ accumulation_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) 
 
 # average_path = direc4_ave + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
 
-average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "corr_etoe/" + jdis +'/' + dim + '/'
+average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "/corr_etoe/" + BC  + "/" + jdis +'/' + dim + '/'
 
 if(os.path.exists(average_dir_path) == False):
     os.makedirs(average_dir_path)
 
-average_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "corr_etoe/" + jdis +'/' + dim + '/' + "corr_etoe_" + "L" + str(L) + "_P_" + str(probDis) + "_m" + str(chi) + "_" + jdis + "_" + dim + '.csv'
+average_path = average_dir_path + "corr_etoe_" + "L" + str(L) + "_P_" + str(probDis) + "_m" + str(chi) + "_" + jdis + "_" + dim + '.csv'
 
 print("accumulation_path:")
 print(accumulation_path)

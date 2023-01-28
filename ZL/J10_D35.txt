@@ -1,0 +1,100 @@
+
+---------------Parameter List----------------
+
+spin: 2
+BC: PBC
+Prob: 10
+chi: 40
+L: 512
+Jdis Jdis100
+Dim Dim035
+initial_Seed 1
+final_Seed 1000
+
+---------------Direction Path----------------
+
+accumulation_path:
+/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/ZL_Accumulation11/Jdis100/Dim035/ZL_Accumulation_Jdis100_Dim035_PBC_L512_P10_m40.csv
+
+
+average_path:
+/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/ZL1/Jdis100/Dim035/PBC_L512_P10_m40_ZL.csv
+
+
+
+---------------averageFrame----------------
+
+averageFrame Empty DataFrame
+Columns: [ZL, error, Nseed, Nsample]
+Index: []
+
+----------------Start---------------
+
+start time:
+1673344899.5812972
+start from seed 1, creat one
+accumulation_frame
+
+Empty DataFrame
+Columns: [ZL, seed_num]
+Index: []
+die_seed_frame
+
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+end time:
+1673344984.173492
+tot_time: 84.59218144416809
+
+----------------end---------------
+
+Nsample 1000
+average 0.0070352966478920845
+std 0.22421299030526673
+error 0.007090237303618944
+accumulation_frame:
+
+           ZL  seed_num
+0   -0.283616       1.0
+1   -0.285054       2.0
+2    0.083951       3.0
+3    0.232549       4.0
+4    0.468549       5.0
+..        ...       ...
+995 -0.229084     996.0
+996  0.103412     997.0
+997  0.106325     998.0
+998  0.100215     999.0
+999  0.487258    1000.0
+
+[1000 rows x 2 columns]
+           ZL  seed_num
+0   -0.283616       1.0
+1   -0.285054       2.0
+2    0.083951       3.0
+3    0.232549       4.0
+4    0.468549       5.0
+..        ...       ...
+995 -0.229084     996.0
+996  0.103412     997.0
+997  0.106325     998.0
+998  0.100215     999.0
+999  0.487258    1000.0
+
+[1000 rows x 2 columns]
+averageFrame:
+
+         ZL    error   Nseed  Nsample
+0  0.007035  0.00709  1000.0   1000.0
+         ZL    error   Nseed  Nsample
+0  0.007035  0.00709  1000.0   1000.0
+die_seed_frame:
+
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+all done

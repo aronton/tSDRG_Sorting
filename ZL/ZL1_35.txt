@@ -1,0 +1,2101 @@
+nohup: ignoring input
+
+---------------Parameter List----------------
+
+spin: 2
+BC: PBC
+Prob: 10
+chi: 40
+L: 512
+Jdis Jdis100
+Dim Dim035
+initial_Seed 1
+final_Seed 2000
+
+---------------Direction Path----------------
+
+accumulation_path:
+/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/ZL_Accumulation11/Jdis100/Dim035/ZL_Accumulation_Jdis100_Dim035_PBC_L512_P10_m40.csv
+
+
+average_path:
+/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/ZL1/Jdis100/Dim035/PBC_L512_P10_m40_ZL.csv
+
+
+
+---------------averageFrame----------------
+
+averageFrame Empty DataFrame
+Columns: [ZL, error, Nseed, Nsample]
+Index: []
+
+----------------Start---------------
+
+start time:
+1673228865.544827
+start from seed 1, creat one
+accumulation_frame
+
+Empty DataFrame
+Columns: [ZL, seed_num]
+Index: []
+die_seed_frame
+
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+missing data: 1001
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1001/ZL.csv
+missing data: 1002
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1002/ZL.csv
+missing data: 1003
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1003/ZL.csv
+missing data: 1004
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1004/ZL.csv
+missing data: 1005
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1005/ZL.csv
+missing data: 1006
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1006/ZL.csv
+missing data: 1007
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1007/ZL.csv
+missing data: 1008
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1008/ZL.csv
+missing data: 1009
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1009/ZL.csv
+missing data: 1010
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1010/ZL.csv
+missing data: 1011
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1011/ZL.csv
+missing data: 1012
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1012/ZL.csv
+missing data: 1013
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1013/ZL.csv
+missing data: 1014
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1014/ZL.csv
+missing data: 1015
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1015/ZL.csv
+missing data: 1016
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1016/ZL.csv
+missing data: 1017
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1017/ZL.csv
+missing data: 1018
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1018/ZL.csv
+missing data: 1019
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1019/ZL.csv
+missing data: 1020
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1020/ZL.csv
+missing data: 1021
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1021/ZL.csv
+missing data: 1022
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1022/ZL.csv
+missing data: 1023
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1023/ZL.csv
+missing data: 1024
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1024/ZL.csv
+missing data: 1025
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1025/ZL.csv
+missing data: 1026
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1026/ZL.csv
+missing data: 1027
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1027/ZL.csv
+missing data: 1028
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1028/ZL.csv
+missing data: 1029
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1029/ZL.csv
+missing data: 1030
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1030/ZL.csv
+missing data: 1031
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1031/ZL.csv
+missing data: 1032
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1032/ZL.csv
+missing data: 1033
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1033/ZL.csv
+missing data: 1034
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1034/ZL.csv
+missing data: 1035
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1035/ZL.csv
+missing data: 1036
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1036/ZL.csv
+missing data: 1037
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1037/ZL.csv
+missing data: 1038
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1038/ZL.csv
+missing data: 1039
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1039/ZL.csv
+missing data: 1040
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1040/ZL.csv
+missing data: 1041
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1041/ZL.csv
+missing data: 1042
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1042/ZL.csv
+missing data: 1043
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1043/ZL.csv
+missing data: 1044
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1044/ZL.csv
+missing data: 1045
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1045/ZL.csv
+missing data: 1046
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1046/ZL.csv
+missing data: 1047
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1047/ZL.csv
+missing data: 1048
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1048/ZL.csv
+missing data: 1049
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1049/ZL.csv
+missing data: 1050
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1050/ZL.csv
+missing data: 1051
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1051/ZL.csv
+missing data: 1052
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1052/ZL.csv
+missing data: 1053
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1053/ZL.csv
+missing data: 1054
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1054/ZL.csv
+missing data: 1055
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1055/ZL.csv
+missing data: 1056
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1056/ZL.csv
+missing data: 1057
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1057/ZL.csv
+missing data: 1058
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1058/ZL.csv
+missing data: 1059
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1059/ZL.csv
+missing data: 1060
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1060/ZL.csv
+missing data: 1061
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1061/ZL.csv
+missing data: 1062
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1062/ZL.csv
+missing data: 1063
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1063/ZL.csv
+missing data: 1064
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1064/ZL.csv
+missing data: 1065
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1065/ZL.csv
+missing data: 1066
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1066/ZL.csv
+missing data: 1067
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1067/ZL.csv
+missing data: 1068
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1068/ZL.csv
+missing data: 1069
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1069/ZL.csv
+missing data: 1070
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1070/ZL.csv
+missing data: 1071
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1071/ZL.csv
+missing data: 1072
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1072/ZL.csv
+missing data: 1073
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1073/ZL.csv
+missing data: 1074
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1074/ZL.csv
+missing data: 1075
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1075/ZL.csv
+missing data: 1076
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1076/ZL.csv
+missing data: 1077
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1077/ZL.csv
+missing data: 1078
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1078/ZL.csv
+missing data: 1079
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1079/ZL.csv
+missing data: 1080
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1080/ZL.csv
+missing data: 1081
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1081/ZL.csv
+missing data: 1082
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1082/ZL.csv
+missing data: 1083
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1083/ZL.csv
+missing data: 1084
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1084/ZL.csv
+missing data: 1085
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1085/ZL.csv
+missing data: 1086
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1086/ZL.csv
+missing data: 1087
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1087/ZL.csv
+missing data: 1088
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1088/ZL.csv
+missing data: 1089
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1089/ZL.csv
+missing data: 1090
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1090/ZL.csv
+missing data: 1091
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1091/ZL.csv
+missing data: 1092
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1092/ZL.csv
+missing data: 1093
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1093/ZL.csv
+missing data: 1094
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1094/ZL.csv
+missing data: 1095
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1095/ZL.csv
+missing data: 1096
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1096/ZL.csv
+missing data: 1097
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1097/ZL.csv
+missing data: 1098
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1098/ZL.csv
+missing data: 1099
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1099/ZL.csv
+missing data: 1100
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1100/ZL.csv
+missing data: 1101
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1101/ZL.csv
+missing data: 1102
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1102/ZL.csv
+missing data: 1103
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1103/ZL.csv
+missing data: 1104
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1104/ZL.csv
+missing data: 1105
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1105/ZL.csv
+missing data: 1106
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1106/ZL.csv
+missing data: 1107
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1107/ZL.csv
+missing data: 1108
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1108/ZL.csv
+missing data: 1109
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1109/ZL.csv
+missing data: 1110
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1110/ZL.csv
+missing data: 1111
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1111/ZL.csv
+missing data: 1112
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1112/ZL.csv
+missing data: 1113
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1113/ZL.csv
+missing data: 1114
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1114/ZL.csv
+missing data: 1115
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1115/ZL.csv
+missing data: 1116
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1116/ZL.csv
+missing data: 1117
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1117/ZL.csv
+missing data: 1118
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1118/ZL.csv
+missing data: 1119
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1119/ZL.csv
+missing data: 1120
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1120/ZL.csv
+missing data: 1121
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1121/ZL.csv
+missing data: 1122
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1122/ZL.csv
+missing data: 1123
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1123/ZL.csv
+missing data: 1124
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1124/ZL.csv
+missing data: 1125
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1125/ZL.csv
+missing data: 1126
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1126/ZL.csv
+missing data: 1127
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1127/ZL.csv
+missing data: 1128
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1128/ZL.csv
+missing data: 1129
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1129/ZL.csv
+missing data: 1130
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1130/ZL.csv
+missing data: 1131
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1131/ZL.csv
+missing data: 1132
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1132/ZL.csv
+missing data: 1133
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1133/ZL.csv
+missing data: 1134
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1134/ZL.csv
+missing data: 1135
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1135/ZL.csv
+missing data: 1136
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1136/ZL.csv
+missing data: 1137
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1137/ZL.csv
+missing data: 1138
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1138/ZL.csv
+missing data: 1139
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1139/ZL.csv
+missing data: 1140
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1140/ZL.csv
+missing data: 1141
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1141/ZL.csv
+missing data: 1142
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1142/ZL.csv
+missing data: 1143
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1143/ZL.csv
+missing data: 1144
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1144/ZL.csv
+missing data: 1145
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1145/ZL.csv
+missing data: 1146
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1146/ZL.csv
+missing data: 1147
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1147/ZL.csv
+missing data: 1148
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1148/ZL.csv
+missing data: 1149
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1149/ZL.csv
+missing data: 1150
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1150/ZL.csv
+missing data: 1151
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1151/ZL.csv
+missing data: 1152
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1152/ZL.csv
+missing data: 1153
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1153/ZL.csv
+missing data: 1154
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1154/ZL.csv
+missing data: 1155
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1155/ZL.csv
+missing data: 1156
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1156/ZL.csv
+missing data: 1157
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1157/ZL.csv
+missing data: 1158
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1158/ZL.csv
+missing data: 1159
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1159/ZL.csv
+missing data: 1160
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1160/ZL.csv
+missing data: 1161
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1161/ZL.csv
+missing data: 1162
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1162/ZL.csv
+missing data: 1163
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1163/ZL.csv
+missing data: 1164
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1164/ZL.csv
+missing data: 1165
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1165/ZL.csv
+missing data: 1166
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1166/ZL.csv
+missing data: 1167
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1167/ZL.csv
+missing data: 1168
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1168/ZL.csv
+missing data: 1169
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1169/ZL.csv
+missing data: 1170
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1170/ZL.csv
+missing data: 1171
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1171/ZL.csv
+missing data: 1172
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1172/ZL.csv
+missing data: 1173
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1173/ZL.csv
+missing data: 1174
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1174/ZL.csv
+missing data: 1175
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1175/ZL.csv
+missing data: 1176
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1176/ZL.csv
+missing data: 1177
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1177/ZL.csv
+missing data: 1178
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1178/ZL.csv
+missing data: 1179
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1179/ZL.csv
+missing data: 1180
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1180/ZL.csv
+missing data: 1181
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1181/ZL.csv
+missing data: 1182
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1182/ZL.csv
+missing data: 1183
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1183/ZL.csv
+missing data: 1184
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1184/ZL.csv
+missing data: 1185
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1185/ZL.csv
+missing data: 1186
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1186/ZL.csv
+missing data: 1187
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1187/ZL.csv
+missing data: 1188
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1188/ZL.csv
+missing data: 1189
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1189/ZL.csv
+missing data: 1190
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1190/ZL.csv
+missing data: 1191
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1191/ZL.csv
+missing data: 1192
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1192/ZL.csv
+missing data: 1193
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1193/ZL.csv
+missing data: 1194
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1194/ZL.csv
+missing data: 1195
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1195/ZL.csv
+missing data: 1196
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1196/ZL.csv
+missing data: 1197
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1197/ZL.csv
+missing data: 1198
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1198/ZL.csv
+missing data: 1199
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1199/ZL.csv
+missing data: 1200
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1200/ZL.csv
+missing data: 1201
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1201/ZL.csv
+missing data: 1202
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1202/ZL.csv
+missing data: 1203
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1203/ZL.csv
+missing data: 1204
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1204/ZL.csv
+missing data: 1205
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1205/ZL.csv
+missing data: 1206
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1206/ZL.csv
+missing data: 1207
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1207/ZL.csv
+missing data: 1208
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1208/ZL.csv
+missing data: 1209
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1209/ZL.csv
+missing data: 1210
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1210/ZL.csv
+missing data: 1211
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1211/ZL.csv
+missing data: 1212
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1212/ZL.csv
+missing data: 1213
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1213/ZL.csv
+missing data: 1214
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1214/ZL.csv
+missing data: 1215
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1215/ZL.csv
+missing data: 1216
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1216/ZL.csv
+missing data: 1217
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1217/ZL.csv
+missing data: 1218
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1218/ZL.csv
+missing data: 1219
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1219/ZL.csv
+missing data: 1220
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1220/ZL.csv
+missing data: 1221
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1221/ZL.csv
+missing data: 1222
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1222/ZL.csv
+missing data: 1223
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1223/ZL.csv
+missing data: 1224
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1224/ZL.csv
+missing data: 1225
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1225/ZL.csv
+missing data: 1226
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1226/ZL.csv
+missing data: 1227
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1227/ZL.csv
+missing data: 1228
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1228/ZL.csv
+missing data: 1229
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1229/ZL.csv
+missing data: 1230
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1230/ZL.csv
+missing data: 1231
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1231/ZL.csv
+missing data: 1232
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1232/ZL.csv
+missing data: 1233
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1233/ZL.csv
+missing data: 1234
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1234/ZL.csv
+missing data: 1235
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1235/ZL.csv
+missing data: 1236
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1236/ZL.csv
+missing data: 1237
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1237/ZL.csv
+missing data: 1238
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1238/ZL.csv
+missing data: 1239
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1239/ZL.csv
+missing data: 1240
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1240/ZL.csv
+missing data: 1241
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1241/ZL.csv
+missing data: 1242
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1242/ZL.csv
+missing data: 1243
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1243/ZL.csv
+missing data: 1244
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1244/ZL.csv
+missing data: 1245
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1245/ZL.csv
+missing data: 1246
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1246/ZL.csv
+missing data: 1247
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1247/ZL.csv
+missing data: 1248
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1248/ZL.csv
+missing data: 1249
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1249/ZL.csv
+missing data: 1250
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1250/ZL.csv
+missing data: 1251
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1251/ZL.csv
+missing data: 1252
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1252/ZL.csv
+missing data: 1253
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1253/ZL.csv
+missing data: 1254
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1254/ZL.csv
+missing data: 1255
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1255/ZL.csv
+missing data: 1256
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1256/ZL.csv
+missing data: 1257
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1257/ZL.csv
+missing data: 1258
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1258/ZL.csv
+missing data: 1259
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1259/ZL.csv
+missing data: 1260
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1260/ZL.csv
+missing data: 1261
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1261/ZL.csv
+missing data: 1262
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1262/ZL.csv
+missing data: 1263
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1263/ZL.csv
+missing data: 1264
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1264/ZL.csv
+missing data: 1265
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1265/ZL.csv
+missing data: 1266
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1266/ZL.csv
+missing data: 1267
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1267/ZL.csv
+missing data: 1268
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1268/ZL.csv
+missing data: 1269
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1269/ZL.csv
+missing data: 1270
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1270/ZL.csv
+missing data: 1271
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1271/ZL.csv
+missing data: 1272
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1272/ZL.csv
+missing data: 1273
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1273/ZL.csv
+missing data: 1274
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1274/ZL.csv
+missing data: 1275
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1275/ZL.csv
+missing data: 1276
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1276/ZL.csv
+missing data: 1277
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1277/ZL.csv
+missing data: 1278
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1278/ZL.csv
+missing data: 1279
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1279/ZL.csv
+missing data: 1280
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1280/ZL.csv
+missing data: 1281
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1281/ZL.csv
+missing data: 1282
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1282/ZL.csv
+missing data: 1283
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1283/ZL.csv
+missing data: 1284
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1284/ZL.csv
+missing data: 1285
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1285/ZL.csv
+missing data: 1286
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1286/ZL.csv
+missing data: 1287
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1287/ZL.csv
+missing data: 1288
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1288/ZL.csv
+missing data: 1289
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1289/ZL.csv
+missing data: 1290
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1290/ZL.csv
+missing data: 1291
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1291/ZL.csv
+missing data: 1292
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1292/ZL.csv
+missing data: 1293
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1293/ZL.csv
+missing data: 1294
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1294/ZL.csv
+missing data: 1295
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1295/ZL.csv
+missing data: 1296
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1296/ZL.csv
+missing data: 1297
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1297/ZL.csv
+missing data: 1298
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1298/ZL.csv
+missing data: 1299
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1299/ZL.csv
+missing data: 1300
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1300/ZL.csv
+missing data: 1301
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1301/ZL.csv
+missing data: 1302
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1302/ZL.csv
+missing data: 1303
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1303/ZL.csv
+missing data: 1304
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1304/ZL.csv
+missing data: 1305
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1305/ZL.csv
+missing data: 1306
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1306/ZL.csv
+missing data: 1307
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1307/ZL.csv
+missing data: 1308
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1308/ZL.csv
+missing data: 1309
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1309/ZL.csv
+missing data: 1310
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1310/ZL.csv
+missing data: 1311
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1311/ZL.csv
+missing data: 1312
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1312/ZL.csv
+missing data: 1313
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1313/ZL.csv
+missing data: 1314
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1314/ZL.csv
+missing data: 1315
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1315/ZL.csv
+missing data: 1316
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1316/ZL.csv
+missing data: 1317
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1317/ZL.csv
+missing data: 1318
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1318/ZL.csv
+missing data: 1319
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1319/ZL.csv
+missing data: 1320
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1320/ZL.csv
+missing data: 1321
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1321/ZL.csv
+missing data: 1322
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1322/ZL.csv
+missing data: 1323
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1323/ZL.csv
+missing data: 1324
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1324/ZL.csv
+missing data: 1325
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1325/ZL.csv
+missing data: 1326
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1326/ZL.csv
+missing data: 1327
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1327/ZL.csv
+missing data: 1328
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1328/ZL.csv
+missing data: 1329
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1329/ZL.csv
+missing data: 1330
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1330/ZL.csv
+missing data: 1331
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1331/ZL.csv
+missing data: 1332
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1332/ZL.csv
+missing data: 1333
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1333/ZL.csv
+missing data: 1334
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1334/ZL.csv
+missing data: 1335
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1335/ZL.csv
+missing data: 1336
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1336/ZL.csv
+missing data: 1337
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1337/ZL.csv
+missing data: 1338
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1338/ZL.csv
+missing data: 1339
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1339/ZL.csv
+missing data: 1340
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1340/ZL.csv
+missing data: 1341
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1341/ZL.csv
+missing data: 1342
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1342/ZL.csv
+missing data: 1343
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1343/ZL.csv
+missing data: 1344
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1344/ZL.csv
+missing data: 1345
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1345/ZL.csv
+missing data: 1346
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1346/ZL.csv
+missing data: 1347
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1347/ZL.csv
+missing data: 1348
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1348/ZL.csv
+missing data: 1349
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1349/ZL.csv
+missing data: 1350
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1350/ZL.csv
+missing data: 1351
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1351/ZL.csv
+missing data: 1352
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1352/ZL.csv
+missing data: 1353
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1353/ZL.csv
+missing data: 1354
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1354/ZL.csv
+missing data: 1355
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1355/ZL.csv
+missing data: 1356
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1356/ZL.csv
+missing data: 1357
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1357/ZL.csv
+missing data: 1358
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1358/ZL.csv
+missing data: 1359
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1359/ZL.csv
+missing data: 1360
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1360/ZL.csv
+missing data: 1361
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1361/ZL.csv
+missing data: 1362
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1362/ZL.csv
+missing data: 1363
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1363/ZL.csv
+missing data: 1364
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1364/ZL.csv
+missing data: 1365
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1365/ZL.csv
+missing data: 1366
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1366/ZL.csv
+missing data: 1367
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1367/ZL.csv
+missing data: 1368
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1368/ZL.csv
+missing data: 1369
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1369/ZL.csv
+missing data: 1370
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1370/ZL.csv
+missing data: 1371
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1371/ZL.csv
+missing data: 1372
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1372/ZL.csv
+missing data: 1373
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1373/ZL.csv
+missing data: 1374
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1374/ZL.csv
+missing data: 1375
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1375/ZL.csv
+missing data: 1376
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1376/ZL.csv
+missing data: 1377
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1377/ZL.csv
+missing data: 1378
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1378/ZL.csv
+missing data: 1379
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1379/ZL.csv
+missing data: 1380
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1380/ZL.csv
+missing data: 1381
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1381/ZL.csv
+missing data: 1382
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1382/ZL.csv
+missing data: 1383
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1383/ZL.csv
+missing data: 1384
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1384/ZL.csv
+missing data: 1385
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1385/ZL.csv
+missing data: 1386
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1386/ZL.csv
+missing data: 1387
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1387/ZL.csv
+missing data: 1388
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1388/ZL.csv
+missing data: 1389
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1389/ZL.csv
+missing data: 1390
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1390/ZL.csv
+missing data: 1391
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1391/ZL.csv
+missing data: 1392
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1392/ZL.csv
+missing data: 1393
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1393/ZL.csv
+missing data: 1394
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1394/ZL.csv
+missing data: 1395
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1395/ZL.csv
+missing data: 1396
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1396/ZL.csv
+missing data: 1397
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1397/ZL.csv
+missing data: 1398
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1398/ZL.csv
+missing data: 1399
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1399/ZL.csv
+missing data: 1400
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1400/ZL.csv
+missing data: 1401
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1401/ZL.csv
+missing data: 1402
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1402/ZL.csv
+missing data: 1403
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1403/ZL.csv
+missing data: 1404
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1404/ZL.csv
+missing data: 1405
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1405/ZL.csv
+missing data: 1406
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1406/ZL.csv
+missing data: 1407
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1407/ZL.csv
+missing data: 1408
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1408/ZL.csv
+missing data: 1409
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1409/ZL.csv
+missing data: 1410
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1410/ZL.csv
+missing data: 1411
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1411/ZL.csv
+missing data: 1412
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1412/ZL.csv
+missing data: 1413
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1413/ZL.csv
+missing data: 1414
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1414/ZL.csv
+missing data: 1415
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1415/ZL.csv
+missing data: 1416
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1416/ZL.csv
+missing data: 1417
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1417/ZL.csv
+missing data: 1418
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1418/ZL.csv
+missing data: 1419
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1419/ZL.csv
+missing data: 1420
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1420/ZL.csv
+missing data: 1421
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1421/ZL.csv
+missing data: 1422
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1422/ZL.csv
+missing data: 1423
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1423/ZL.csv
+missing data: 1424
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1424/ZL.csv
+missing data: 1425
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1425/ZL.csv
+missing data: 1426
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1426/ZL.csv
+missing data: 1427
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1427/ZL.csv
+missing data: 1428
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1428/ZL.csv
+missing data: 1429
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1429/ZL.csv
+missing data: 1430
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1430/ZL.csv
+missing data: 1431
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1431/ZL.csv
+missing data: 1432
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1432/ZL.csv
+missing data: 1433
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1433/ZL.csv
+missing data: 1434
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1434/ZL.csv
+missing data: 1435
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1435/ZL.csv
+missing data: 1436
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1436/ZL.csv
+missing data: 1437
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1437/ZL.csv
+missing data: 1438
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1438/ZL.csv
+missing data: 1439
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1439/ZL.csv
+missing data: 1440
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1440/ZL.csv
+missing data: 1441
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1441/ZL.csv
+missing data: 1442
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1442/ZL.csv
+missing data: 1443
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1443/ZL.csv
+missing data: 1444
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1444/ZL.csv
+missing data: 1445
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1445/ZL.csv
+missing data: 1446
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1446/ZL.csv
+missing data: 1447
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1447/ZL.csv
+missing data: 1448
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1448/ZL.csv
+missing data: 1449
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1449/ZL.csv
+missing data: 1450
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1450/ZL.csv
+missing data: 1451
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1451/ZL.csv
+missing data: 1452
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1452/ZL.csv
+missing data: 1453
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1453/ZL.csv
+missing data: 1454
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1454/ZL.csv
+missing data: 1455
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1455/ZL.csv
+missing data: 1456
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1456/ZL.csv
+missing data: 1457
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1457/ZL.csv
+missing data: 1458
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1458/ZL.csv
+missing data: 1459
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1459/ZL.csv
+missing data: 1460
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1460/ZL.csv
+missing data: 1461
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1461/ZL.csv
+missing data: 1462
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1462/ZL.csv
+missing data: 1463
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1463/ZL.csv
+missing data: 1464
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1464/ZL.csv
+missing data: 1465
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1465/ZL.csv
+missing data: 1466
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1466/ZL.csv
+missing data: 1467
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1467/ZL.csv
+missing data: 1468
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1468/ZL.csv
+missing data: 1469
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1469/ZL.csv
+missing data: 1470
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1470/ZL.csv
+missing data: 1471
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1471/ZL.csv
+missing data: 1472
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1472/ZL.csv
+missing data: 1473
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1473/ZL.csv
+missing data: 1474
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1474/ZL.csv
+missing data: 1475
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1475/ZL.csv
+missing data: 1476
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1476/ZL.csv
+missing data: 1477
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1477/ZL.csv
+missing data: 1478
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1478/ZL.csv
+missing data: 1479
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1479/ZL.csv
+missing data: 1480
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1480/ZL.csv
+missing data: 1481
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1481/ZL.csv
+missing data: 1482
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1482/ZL.csv
+missing data: 1483
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1483/ZL.csv
+missing data: 1484
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1484/ZL.csv
+missing data: 1485
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1485/ZL.csv
+missing data: 1486
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1486/ZL.csv
+missing data: 1487
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1487/ZL.csv
+missing data: 1488
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1488/ZL.csv
+missing data: 1489
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1489/ZL.csv
+missing data: 1490
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1490/ZL.csv
+missing data: 1491
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1491/ZL.csv
+missing data: 1492
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1492/ZL.csv
+missing data: 1493
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1493/ZL.csv
+missing data: 1494
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1494/ZL.csv
+missing data: 1495
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1495/ZL.csv
+missing data: 1496
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1496/ZL.csv
+missing data: 1497
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1497/ZL.csv
+missing data: 1498
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1498/ZL.csv
+missing data: 1499
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1499/ZL.csv
+missing data: 1500
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1500/ZL.csv
+missing data: 1501
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1501/ZL.csv
+missing data: 1502
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1502/ZL.csv
+missing data: 1503
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1503/ZL.csv
+missing data: 1504
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1504/ZL.csv
+missing data: 1505
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1505/ZL.csv
+missing data: 1506
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1506/ZL.csv
+missing data: 1507
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1507/ZL.csv
+missing data: 1508
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1508/ZL.csv
+missing data: 1509
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1509/ZL.csv
+missing data: 1510
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1510/ZL.csv
+missing data: 1511
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1511/ZL.csv
+missing data: 1512
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1512/ZL.csv
+missing data: 1513
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1513/ZL.csv
+missing data: 1514
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1514/ZL.csv
+missing data: 1515
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1515/ZL.csv
+missing data: 1516
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1516/ZL.csv
+missing data: 1517
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1517/ZL.csv
+missing data: 1518
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1518/ZL.csv
+missing data: 1519
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1519/ZL.csv
+missing data: 1520
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1520/ZL.csv
+missing data: 1521
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1521/ZL.csv
+missing data: 1522
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1522/ZL.csv
+missing data: 1523
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1523/ZL.csv
+missing data: 1524
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1524/ZL.csv
+missing data: 1525
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1525/ZL.csv
+missing data: 1526
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1526/ZL.csv
+missing data: 1527
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1527/ZL.csv
+missing data: 1528
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1528/ZL.csv
+missing data: 1529
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1529/ZL.csv
+missing data: 1530
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1530/ZL.csv
+missing data: 1531
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1531/ZL.csv
+missing data: 1532
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1532/ZL.csv
+missing data: 1533
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1533/ZL.csv
+missing data: 1534
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1534/ZL.csv
+missing data: 1535
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1535/ZL.csv
+missing data: 1536
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1536/ZL.csv
+missing data: 1537
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1537/ZL.csv
+missing data: 1538
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1538/ZL.csv
+missing data: 1539
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1539/ZL.csv
+missing data: 1540
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1540/ZL.csv
+missing data: 1541
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1541/ZL.csv
+missing data: 1542
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1542/ZL.csv
+missing data: 1543
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1543/ZL.csv
+missing data: 1544
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1544/ZL.csv
+missing data: 1545
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1545/ZL.csv
+missing data: 1546
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1546/ZL.csv
+missing data: 1547
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1547/ZL.csv
+missing data: 1548
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1548/ZL.csv
+missing data: 1549
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1549/ZL.csv
+missing data: 1550
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1550/ZL.csv
+missing data: 1551
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1551/ZL.csv
+missing data: 1552
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1552/ZL.csv
+missing data: 1553
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1553/ZL.csv
+missing data: 1554
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1554/ZL.csv
+missing data: 1555
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1555/ZL.csv
+missing data: 1556
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1556/ZL.csv
+missing data: 1557
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1557/ZL.csv
+missing data: 1558
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1558/ZL.csv
+missing data: 1559
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1559/ZL.csv
+missing data: 1560
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1560/ZL.csv
+missing data: 1561
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1561/ZL.csv
+missing data: 1562
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1562/ZL.csv
+missing data: 1563
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1563/ZL.csv
+missing data: 1564
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1564/ZL.csv
+missing data: 1565
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1565/ZL.csv
+missing data: 1566
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1566/ZL.csv
+missing data: 1567
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1567/ZL.csv
+missing data: 1568
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1568/ZL.csv
+missing data: 1569
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1569/ZL.csv
+missing data: 1570
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1570/ZL.csv
+missing data: 1571
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1571/ZL.csv
+missing data: 1572
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1572/ZL.csv
+missing data: 1573
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1573/ZL.csv
+missing data: 1574
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1574/ZL.csv
+missing data: 1575
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1575/ZL.csv
+missing data: 1576
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1576/ZL.csv
+missing data: 1577
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1577/ZL.csv
+missing data: 1578
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1578/ZL.csv
+missing data: 1579
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1579/ZL.csv
+missing data: 1580
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1580/ZL.csv
+missing data: 1581
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1581/ZL.csv
+missing data: 1582
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1582/ZL.csv
+missing data: 1583
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1583/ZL.csv
+missing data: 1584
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1584/ZL.csv
+missing data: 1585
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1585/ZL.csv
+missing data: 1586
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1586/ZL.csv
+missing data: 1587
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1587/ZL.csv
+missing data: 1588
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1588/ZL.csv
+missing data: 1589
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1589/ZL.csv
+missing data: 1590
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1590/ZL.csv
+missing data: 1591
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1591/ZL.csv
+missing data: 1592
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1592/ZL.csv
+missing data: 1593
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1593/ZL.csv
+missing data: 1594
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1594/ZL.csv
+missing data: 1595
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1595/ZL.csv
+missing data: 1596
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1596/ZL.csv
+missing data: 1597
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1597/ZL.csv
+missing data: 1598
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1598/ZL.csv
+missing data: 1599
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1599/ZL.csv
+missing data: 1600
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1600/ZL.csv
+missing data: 1601
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1601/ZL.csv
+missing data: 1602
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1602/ZL.csv
+missing data: 1603
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1603/ZL.csv
+missing data: 1604
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1604/ZL.csv
+missing data: 1605
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1605/ZL.csv
+missing data: 1606
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1606/ZL.csv
+missing data: 1607
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1607/ZL.csv
+missing data: 1608
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1608/ZL.csv
+missing data: 1609
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1609/ZL.csv
+missing data: 1610
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1610/ZL.csv
+missing data: 1611
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1611/ZL.csv
+missing data: 1612
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1612/ZL.csv
+missing data: 1613
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1613/ZL.csv
+missing data: 1614
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1614/ZL.csv
+missing data: 1615
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1615/ZL.csv
+missing data: 1616
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1616/ZL.csv
+missing data: 1617
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1617/ZL.csv
+missing data: 1618
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1618/ZL.csv
+missing data: 1619
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1619/ZL.csv
+missing data: 1620
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1620/ZL.csv
+missing data: 1621
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1621/ZL.csv
+missing data: 1622
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1622/ZL.csv
+missing data: 1623
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1623/ZL.csv
+missing data: 1624
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1624/ZL.csv
+missing data: 1625
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1625/ZL.csv
+missing data: 1626
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1626/ZL.csv
+missing data: 1627
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1627/ZL.csv
+missing data: 1628
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1628/ZL.csv
+missing data: 1629
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1629/ZL.csv
+missing data: 1630
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1630/ZL.csv
+missing data: 1631
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1631/ZL.csv
+missing data: 1632
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1632/ZL.csv
+missing data: 1633
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1633/ZL.csv
+missing data: 1634
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1634/ZL.csv
+missing data: 1635
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1635/ZL.csv
+missing data: 1636
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1636/ZL.csv
+missing data: 1637
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1637/ZL.csv
+missing data: 1638
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1638/ZL.csv
+missing data: 1639
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1639/ZL.csv
+missing data: 1640
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1640/ZL.csv
+missing data: 1641
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1641/ZL.csv
+missing data: 1642
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1642/ZL.csv
+missing data: 1643
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1643/ZL.csv
+missing data: 1644
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1644/ZL.csv
+missing data: 1645
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1645/ZL.csv
+missing data: 1646
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1646/ZL.csv
+missing data: 1647
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1647/ZL.csv
+missing data: 1648
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1648/ZL.csv
+missing data: 1649
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1649/ZL.csv
+missing data: 1650
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1650/ZL.csv
+missing data: 1651
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1651/ZL.csv
+missing data: 1652
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1652/ZL.csv
+missing data: 1653
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1653/ZL.csv
+missing data: 1654
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1654/ZL.csv
+missing data: 1655
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1655/ZL.csv
+missing data: 1656
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1656/ZL.csv
+missing data: 1657
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1657/ZL.csv
+missing data: 1658
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1658/ZL.csv
+missing data: 1659
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1659/ZL.csv
+missing data: 1660
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1660/ZL.csv
+missing data: 1661
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1661/ZL.csv
+missing data: 1662
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1662/ZL.csv
+missing data: 1663
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1663/ZL.csv
+missing data: 1664
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1664/ZL.csv
+missing data: 1665
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1665/ZL.csv
+missing data: 1666
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1666/ZL.csv
+missing data: 1667
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1667/ZL.csv
+missing data: 1668
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1668/ZL.csv
+missing data: 1669
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1669/ZL.csv
+missing data: 1670
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1670/ZL.csv
+missing data: 1671
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1671/ZL.csv
+missing data: 1672
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1672/ZL.csv
+missing data: 1673
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1673/ZL.csv
+missing data: 1674
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1674/ZL.csv
+missing data: 1675
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1675/ZL.csv
+missing data: 1676
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1676/ZL.csv
+missing data: 1677
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1677/ZL.csv
+missing data: 1678
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1678/ZL.csv
+missing data: 1679
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1679/ZL.csv
+missing data: 1680
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1680/ZL.csv
+missing data: 1681
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1681/ZL.csv
+missing data: 1682
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1682/ZL.csv
+missing data: 1683
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1683/ZL.csv
+missing data: 1684
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1684/ZL.csv
+missing data: 1685
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1685/ZL.csv
+missing data: 1686
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1686/ZL.csv
+missing data: 1687
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1687/ZL.csv
+missing data: 1688
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1688/ZL.csv
+missing data: 1689
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1689/ZL.csv
+missing data: 1690
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1690/ZL.csv
+missing data: 1691
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1691/ZL.csv
+missing data: 1692
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1692/ZL.csv
+missing data: 1693
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1693/ZL.csv
+missing data: 1694
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1694/ZL.csv
+missing data: 1695
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1695/ZL.csv
+missing data: 1696
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1696/ZL.csv
+missing data: 1697
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1697/ZL.csv
+missing data: 1698
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1698/ZL.csv
+missing data: 1699
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1699/ZL.csv
+missing data: 1700
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1700/ZL.csv
+missing data: 1701
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1701/ZL.csv
+missing data: 1702
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1702/ZL.csv
+missing data: 1703
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1703/ZL.csv
+missing data: 1704
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1704/ZL.csv
+missing data: 1705
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1705/ZL.csv
+missing data: 1706
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1706/ZL.csv
+missing data: 1707
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1707/ZL.csv
+missing data: 1708
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1708/ZL.csv
+missing data: 1709
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1709/ZL.csv
+missing data: 1710
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1710/ZL.csv
+missing data: 1711
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1711/ZL.csv
+missing data: 1712
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1712/ZL.csv
+missing data: 1713
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1713/ZL.csv
+missing data: 1714
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1714/ZL.csv
+missing data: 1715
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1715/ZL.csv
+missing data: 1716
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1716/ZL.csv
+missing data: 1717
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1717/ZL.csv
+missing data: 1718
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1718/ZL.csv
+missing data: 1719
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1719/ZL.csv
+missing data: 1720
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1720/ZL.csv
+missing data: 1721
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1721/ZL.csv
+missing data: 1722
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1722/ZL.csv
+missing data: 1723
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1723/ZL.csv
+missing data: 1724
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1724/ZL.csv
+missing data: 1725
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1725/ZL.csv
+missing data: 1726
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1726/ZL.csv
+missing data: 1727
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1727/ZL.csv
+missing data: 1728
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1728/ZL.csv
+missing data: 1729
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1729/ZL.csv
+missing data: 1730
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1730/ZL.csv
+missing data: 1731
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1731/ZL.csv
+missing data: 1732
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1732/ZL.csv
+missing data: 1733
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1733/ZL.csv
+missing data: 1734
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1734/ZL.csv
+missing data: 1735
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1735/ZL.csv
+missing data: 1736
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1736/ZL.csv
+missing data: 1737
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1737/ZL.csv
+missing data: 1738
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1738/ZL.csv
+missing data: 1739
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1739/ZL.csv
+missing data: 1740
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1740/ZL.csv
+missing data: 1741
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1741/ZL.csv
+missing data: 1742
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1742/ZL.csv
+missing data: 1743
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1743/ZL.csv
+missing data: 1744
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1744/ZL.csv
+missing data: 1745
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1745/ZL.csv
+missing data: 1746
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1746/ZL.csv
+missing data: 1747
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1747/ZL.csv
+missing data: 1748
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1748/ZL.csv
+missing data: 1749
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1749/ZL.csv
+missing data: 1750
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1750/ZL.csv
+missing data: 1751
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1751/ZL.csv
+missing data: 1752
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1752/ZL.csv
+missing data: 1753
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1753/ZL.csv
+missing data: 1754
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1754/ZL.csv
+missing data: 1755
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1755/ZL.csv
+missing data: 1756
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1756/ZL.csv
+missing data: 1757
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1757/ZL.csv
+missing data: 1758
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1758/ZL.csv
+missing data: 1759
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1759/ZL.csv
+missing data: 1760
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1760/ZL.csv
+missing data: 1761
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1761/ZL.csv
+missing data: 1762
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1762/ZL.csv
+missing data: 1763
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1763/ZL.csv
+missing data: 1764
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1764/ZL.csv
+missing data: 1765
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1765/ZL.csv
+missing data: 1766
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1766/ZL.csv
+missing data: 1767
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1767/ZL.csv
+missing data: 1768
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1768/ZL.csv
+missing data: 1769
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1769/ZL.csv
+missing data: 1770
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1770/ZL.csv
+missing data: 1771
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1771/ZL.csv
+missing data: 1772
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1772/ZL.csv
+missing data: 1773
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1773/ZL.csv
+missing data: 1774
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1774/ZL.csv
+missing data: 1775
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1775/ZL.csv
+missing data: 1776
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1776/ZL.csv
+missing data: 1777
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1777/ZL.csv
+missing data: 1778
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1778/ZL.csv
+missing data: 1779
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1779/ZL.csv
+missing data: 1780
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1780/ZL.csv
+missing data: 1781
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1781/ZL.csv
+missing data: 1782
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1782/ZL.csv
+missing data: 1783
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1783/ZL.csv
+missing data: 1784
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1784/ZL.csv
+missing data: 1785
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1785/ZL.csv
+missing data: 1786
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1786/ZL.csv
+missing data: 1787
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1787/ZL.csv
+missing data: 1788
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1788/ZL.csv
+missing data: 1789
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1789/ZL.csv
+missing data: 1790
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1790/ZL.csv
+missing data: 1791
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1791/ZL.csv
+missing data: 1792
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1792/ZL.csv
+missing data: 1793
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1793/ZL.csv
+missing data: 1794
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1794/ZL.csv
+missing data: 1795
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1795/ZL.csv
+missing data: 1796
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1796/ZL.csv
+missing data: 1797
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1797/ZL.csv
+missing data: 1798
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1798/ZL.csv
+missing data: 1799
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1799/ZL.csv
+missing data: 1800
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1800/ZL.csv
+missing data: 1801
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1801/ZL.csv
+missing data: 1802
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1802/ZL.csv
+missing data: 1803
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1803/ZL.csv
+missing data: 1804
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1804/ZL.csv
+missing data: 1805
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1805/ZL.csv
+missing data: 1806
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1806/ZL.csv
+missing data: 1807
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1807/ZL.csv
+missing data: 1808
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1808/ZL.csv
+missing data: 1809
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1809/ZL.csv
+missing data: 1810
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1810/ZL.csv
+missing data: 1811
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1811/ZL.csv
+missing data: 1812
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1812/ZL.csv
+missing data: 1813
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1813/ZL.csv
+missing data: 1814
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1814/ZL.csv
+missing data: 1815
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1815/ZL.csv
+missing data: 1816
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1816/ZL.csv
+missing data: 1817
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1817/ZL.csv
+missing data: 1818
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1818/ZL.csv
+missing data: 1819
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1819/ZL.csv
+missing data: 1820
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1820/ZL.csv
+missing data: 1821
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1821/ZL.csv
+missing data: 1822
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1822/ZL.csv
+missing data: 1823
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1823/ZL.csv
+missing data: 1824
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1824/ZL.csv
+missing data: 1825
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1825/ZL.csv
+missing data: 1826
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1826/ZL.csv
+missing data: 1827
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1827/ZL.csv
+missing data: 1828
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1828/ZL.csv
+missing data: 1829
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1829/ZL.csv
+missing data: 1830
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1830/ZL.csv
+missing data: 1831
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1831/ZL.csv
+missing data: 1832
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1832/ZL.csv
+missing data: 1833
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1833/ZL.csv
+missing data: 1834
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1834/ZL.csv
+missing data: 1835
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1835/ZL.csv
+missing data: 1836
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1836/ZL.csv
+missing data: 1837
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1837/ZL.csv
+missing data: 1838
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1838/ZL.csv
+missing data: 1839
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1839/ZL.csv
+missing data: 1840
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1840/ZL.csv
+missing data: 1841
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1841/ZL.csv
+missing data: 1842
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1842/ZL.csv
+missing data: 1843
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1843/ZL.csv
+missing data: 1844
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1844/ZL.csv
+missing data: 1845
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1845/ZL.csv
+missing data: 1846
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1846/ZL.csv
+missing data: 1847
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1847/ZL.csv
+missing data: 1848
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1848/ZL.csv
+missing data: 1849
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1849/ZL.csv
+missing data: 1850
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1850/ZL.csv
+missing data: 1851
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1851/ZL.csv
+missing data: 1852
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1852/ZL.csv
+missing data: 1853
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1853/ZL.csv
+missing data: 1854
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1854/ZL.csv
+missing data: 1855
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1855/ZL.csv
+missing data: 1856
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1856/ZL.csv
+missing data: 1857
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1857/ZL.csv
+missing data: 1858
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1858/ZL.csv
+missing data: 1859
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1859/ZL.csv
+missing data: 1860
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1860/ZL.csv
+missing data: 1861
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1861/ZL.csv
+missing data: 1862
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1862/ZL.csv
+missing data: 1863
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1863/ZL.csv
+missing data: 1864
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1864/ZL.csv
+missing data: 1865
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1865/ZL.csv
+missing data: 1866
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1866/ZL.csv
+missing data: 1867
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1867/ZL.csv
+missing data: 1868
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1868/ZL.csv
+missing data: 1869
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1869/ZL.csv
+missing data: 1870
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1870/ZL.csv
+missing data: 1871
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1871/ZL.csv
+missing data: 1872
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1872/ZL.csv
+missing data: 1873
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1873/ZL.csv
+missing data: 1874
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1874/ZL.csv
+missing data: 1875
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1875/ZL.csv
+missing data: 1876
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1876/ZL.csv
+missing data: 1877
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1877/ZL.csv
+missing data: 1878
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1878/ZL.csv
+missing data: 1879
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1879/ZL.csv
+missing data: 1880
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1880/ZL.csv
+missing data: 1881
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1881/ZL.csv
+missing data: 1882
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1882/ZL.csv
+missing data: 1883
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1883/ZL.csv
+missing data: 1884
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1884/ZL.csv
+missing data: 1885
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1885/ZL.csv
+missing data: 1886
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1886/ZL.csv
+missing data: 1887
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1887/ZL.csv
+missing data: 1888
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1888/ZL.csv
+missing data: 1889
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1889/ZL.csv
+missing data: 1890
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1890/ZL.csv
+missing data: 1891
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1891/ZL.csv
+missing data: 1892
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1892/ZL.csv
+missing data: 1893
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1893/ZL.csv
+missing data: 1894
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1894/ZL.csv
+missing data: 1895
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1895/ZL.csv
+missing data: 1896
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1896/ZL.csv
+missing data: 1897
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1897/ZL.csv
+missing data: 1898
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1898/ZL.csv
+missing data: 1899
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1899/ZL.csv
+missing data: 1900
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1900/ZL.csv
+missing data: 1901
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1901/ZL.csv
+missing data: 1902
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1902/ZL.csv
+missing data: 1903
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1903/ZL.csv
+missing data: 1904
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1904/ZL.csv
+missing data: 1905
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1905/ZL.csv
+missing data: 1906
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1906/ZL.csv
+missing data: 1907
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1907/ZL.csv
+missing data: 1908
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1908/ZL.csv
+missing data: 1909
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1909/ZL.csv
+missing data: 1910
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1910/ZL.csv
+missing data: 1911
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1911/ZL.csv
+missing data: 1912
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1912/ZL.csv
+missing data: 1913
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1913/ZL.csv
+missing data: 1914
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1914/ZL.csv
+missing data: 1915
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1915/ZL.csv
+missing data: 1916
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1916/ZL.csv
+missing data: 1917
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1917/ZL.csv
+missing data: 1918
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1918/ZL.csv
+missing data: 1919
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1919/ZL.csv
+missing data: 1920
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1920/ZL.csv
+missing data: 1921
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1921/ZL.csv
+missing data: 1922
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1922/ZL.csv
+missing data: 1923
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1923/ZL.csv
+missing data: 1924
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1924/ZL.csv
+missing data: 1925
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1925/ZL.csv
+missing data: 1926
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1926/ZL.csv
+missing data: 1927
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1927/ZL.csv
+missing data: 1928
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1928/ZL.csv
+missing data: 1929
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1929/ZL.csv
+missing data: 1930
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1930/ZL.csv
+missing data: 1931
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1931/ZL.csv
+missing data: 1932
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1932/ZL.csv
+missing data: 1933
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1933/ZL.csv
+missing data: 1934
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1934/ZL.csv
+missing data: 1935
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1935/ZL.csv
+missing data: 1936
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1936/ZL.csv
+missing data: 1937
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1937/ZL.csv
+missing data: 1938
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1938/ZL.csv
+missing data: 1939
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1939/ZL.csv
+missing data: 1940
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1940/ZL.csv
+missing data: 1941
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1941/ZL.csv
+missing data: 1942
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1942/ZL.csv
+missing data: 1943
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1943/ZL.csv
+missing data: 1944
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1944/ZL.csv
+missing data: 1945
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1945/ZL.csv
+missing data: 1946
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1946/ZL.csv
+missing data: 1947
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1947/ZL.csv
+missing data: 1948
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1948/ZL.csv
+missing data: 1949
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1949/ZL.csv
+missing data: 1950
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1950/ZL.csv
+missing data: 1951
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1951/ZL.csv
+missing data: 1952
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1952/ZL.csv
+missing data: 1953
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1953/ZL.csv
+missing data: 1954
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1954/ZL.csv
+missing data: 1955
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1955/ZL.csv
+missing data: 1956
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1956/ZL.csv
+missing data: 1957
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1957/ZL.csv
+missing data: 1958
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1958/ZL.csv
+missing data: 1959
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1959/ZL.csv
+missing data: 1960
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1960/ZL.csv
+missing data: 1961
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1961/ZL.csv
+missing data: 1962
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1962/ZL.csv
+missing data: 1963
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1963/ZL.csv
+missing data: 1964
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1964/ZL.csv
+missing data: 1965
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1965/ZL.csv
+missing data: 1966
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1966/ZL.csv
+missing data: 1967
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1967/ZL.csv
+missing data: 1968
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1968/ZL.csv
+missing data: 1969
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1969/ZL.csv
+missing data: 1970
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1970/ZL.csv
+missing data: 1971
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1971/ZL.csv
+missing data: 1972
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1972/ZL.csv
+missing data: 1973
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1973/ZL.csv
+missing data: 1974
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1974/ZL.csv
+missing data: 1975
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1975/ZL.csv
+missing data: 1976
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1976/ZL.csv
+missing data: 1977
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1977/ZL.csv
+missing data: 1978
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1978/ZL.csv
+missing data: 1979
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1979/ZL.csv
+missing data: 1980
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1980/ZL.csv
+missing data: 1981
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1981/ZL.csv
+missing data: 1982
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1982/ZL.csv
+missing data: 1983
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1983/ZL.csv
+missing data: 1984
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1984/ZL.csv
+missing data: 1985
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1985/ZL.csv
+missing data: 1986
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1986/ZL.csv
+missing data: 1987
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1987/ZL.csv
+missing data: 1988
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1988/ZL.csv
+missing data: 1989
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1989/ZL.csv
+missing data: 1990
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1990/ZL.csv
+missing data: 1991
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1991/ZL.csv
+missing data: 1992
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1992/ZL.csv
+missing data: 1993
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1993/ZL.csv
+missing data: 1994
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1994/ZL.csv
+missing data: 1995
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1995/ZL.csv
+missing data: 1996
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1996/ZL.csv
+missing data: 1997
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1997/ZL.csv
+missing data: 1998
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1998/ZL.csv
+missing data: 1999
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_1999/ZL.csv
+missing data: 2000
+my_file: /home/aronton/tSDRG_project/tSDRG/Main_2/data/PBC/Jdis100/Dim035/L512_P10_m40_2000/ZL.csv
+end time:
+1673228925.7685242
+tot_time: 60.22369599342346
+
+----------------end---------------
+
+Nsample 1000
+average 0.0070352966478920845
+std 0.22421299030526673
+error 0.007090237303618944
+accumulation_frame:
+
+           ZL  seed_num
+0   -0.283616       1.0
+1   -0.285054       2.0
+2    0.083951       3.0
+3    0.232549       4.0
+4    0.468549       5.0
+..        ...       ...
+995 -0.229084     996.0
+996  0.103412     997.0
+997  0.106325     998.0
+998  0.100215     999.0
+999  0.487258    1000.0
+
+[1000 rows x 2 columns]
+           ZL  seed_num
+0   -0.283616       1.0
+1   -0.285054       2.0
+2    0.083951       3.0
+3    0.232549       4.0
+4    0.468549       5.0
+..        ...       ...
+995 -0.229084     996.0
+996  0.103412     997.0
+997  0.106325     998.0
+998  0.100215     999.0
+999  0.487258    1000.0
+
+[1000 rows x 2 columns]
+averageFrame:
+
+         ZL    error   Nseed  Nsample
+0  0.007035  0.00709  2000.0   1000.0
+         ZL    error   Nseed  Nsample
+0  0.007035  0.00709  2000.0   1000.0
+die_seed_frame:
+
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+all done

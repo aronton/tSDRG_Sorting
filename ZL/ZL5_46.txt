@@ -1,0 +1,101 @@
+nohup: ignoring input
+
+---------------Parameter List----------------
+
+spin: 2
+BC: PBC
+Prob: 10
+chi: 40
+L: 512
+Jdis Jdis050
+Dim Dim046
+initial_Seed 1
+final_Seed 2000
+
+---------------Direction Path----------------
+
+accumulation_path:
+/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/ZL_Accumulation11/Jdis050/Dim046/ZL_Accumulation_Jdis050_Dim046_PBC_L512_P10_m40.csv
+
+
+average_path:
+/home/aronton/tSDRG_project/Sorting_data/Spin2/metadata/ZL1/Jdis050/Dim046/PBC_L512_P10_m40_ZL.csv
+
+
+
+---------------averageFrame----------------
+
+averageFrame Empty DataFrame
+Columns: [ZL, error, Nseed, Nsample]
+Index: []
+
+----------------Start---------------
+
+start time:
+1673228978.0780387
+start from seed 1, creat one
+accumulation_frame
+
+Empty DataFrame
+Columns: [ZL, seed_num]
+Index: []
+die_seed_frame
+
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+end time:
+1673229046.5179656
+tot_time: 68.43989610671997
+
+----------------end---------------
+
+Nsample 2000
+average -0.3085773163204359
+std 0.37201053319692073
+error 0.008318408405742569
+accumulation_frame:
+
+            ZL  seed_num
+0    -0.360925       1.0
+1    -0.636931       2.0
+2    -0.525968       3.0
+3    -0.250178       4.0
+4     0.343389       5.0
+...        ...       ...
+1995 -0.682594    1996.0
+1996 -0.076856    1997.0
+1997  0.259203    1998.0
+1998 -0.588231    1999.0
+1999 -0.640970    2000.0
+
+[2000 rows x 2 columns]
+            ZL  seed_num
+0    -0.360925       1.0
+1    -0.636931       2.0
+2    -0.525968       3.0
+3    -0.250178       4.0
+4     0.343389       5.0
+...        ...       ...
+1995 -0.682594    1996.0
+1996 -0.076856    1997.0
+1997  0.259203    1998.0
+1998 -0.588231    1999.0
+1999 -0.640970    2000.0
+
+[2000 rows x 2 columns]
+averageFrame:
+
+         ZL     error   Nseed  Nsample
+0 -0.308577  0.008318  2000.0   2000.0
+         ZL     error   Nseed  Nsample
+0 -0.308577  0.008318  2000.0   2000.0
+die_seed_frame:
+
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+Empty DataFrame
+Columns: [die_seed_num]
+Index: []
+all done
