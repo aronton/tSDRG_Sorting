@@ -1,5 +1,0 @@
-nohup: ignoring input
-Traceback (most recent call last):
-  File "bulk_corr.py", line 173, in <module>
-    dx_f = int(sys.argv[11])
-ValueError: invalid literal for int() with base 10: 'OUTPUT3.txt'
