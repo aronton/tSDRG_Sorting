@@ -116,7 +116,7 @@ accumulation_path = accumulation_dir_path +'/' +'corr_etoe_Accumulation_' + jdis
 
 # average_path = direc4_ave + BC + '_L' + str(L) + "_P" + str(probDis) + "_m" + str(chi) + "_ZL" + '.csv'
 
-average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + '/metadata/' + "/corr_etoe/" + BC  + "/" + jdis +'/' + dim + '/'
+average_dir_path = '/home/aronton/tSDRG_project/Sorting_data/Spin' + str(spin) + "/metadata/corr_etoe/" + BC  + "/" + jdis +"/" + dim + "/"
 
 if(os.path.exists(average_dir_path) == False):
     os.makedirs(average_dir_path)

@@ -1,4 +1,4 @@
-read -p "SOP, ZL, bulk_corr, gap, corr_etoe?(a,b,c,d,e) : " number
+read -p "SOP, ZL, bulk_corr, gap, corr_etoe, gap_max?(a,b,c,d,e,f) : " number
 sinfo
 read -p "partition : " partition
 scontrol show partition "scopion${partition}"
@@ -70,4 +70,12 @@ then
     read -p "Continue or not (Y/N): " Continue
 
     nohup sh /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/${orderparameter}/Metasub_${orderparameter}.sh $orderparameter $partition $Ncore $Spin $P $bonDim $L1 $L2 $space_L $J1 $J2 $space_J $D1 $D2 $space_D $s1 $s2 $Nseed $BC $deltaSeed&
+elif [ ${number} == "f" ]
+then
+    orderparameter="gap_max"
+    echo "Partition:" ${partition} "Number of core:" ${cpuspertask} "Spin:${Spin}"";L:"${L1}"~" ${L2} "(" ${space_L} ")" ";J:" ${J1} "~" ${J2} "(" ${space_J} ")" ";D:" ${D1} "~" ${D2} "(" ${space_D} ")" ",seed1:" ${s1} ",seed2:" ${s2} "Orderparameter:" ${orderparameter}
+
+    read -p "Continue or not (Y/N): " Continue
+
+    nohup sh /home/aronton/tSDRG_project/Sorting_data/tSDRG_Sorting/${orderparameter}/Metasub_${orderparameter}.sh $orderparameter $partition $Ncore $Spin $P $bonDim $L1 $L2 $space_L $J1 $J2 $space_J $D1 $D2 $space_D $s1 $s2 $Nseed $BC $deltaSeed $dx&
 fi
